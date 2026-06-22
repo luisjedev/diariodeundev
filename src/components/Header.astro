@@ -8,7 +8,7 @@ const isActive = (href: string) =>
   href === "/" ? path === "/" : path.startsWith(href);
 ---
 
-<header transition:persist="header" class="sticky top-0 z-50 border-b-2 border-border bg-background">
+<header class="sticky top-0 z-50 border-b-2 border-border bg-background">
   <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3">
     <a href="/" class="group inline-flex items-center gap-[3px]">
       <span
@@ -65,7 +65,7 @@ const isActive = (href: string) =>
 </header>
 
 {/* Drawer lateral móvil */}
-<div id="mobile-menu" transition:persist="mobile-menu" class="fixed inset-0 z-50 hidden sm:hidden">
+<div id="mobile-menu" class="fixed inset-0 z-50 hidden sm:hidden">
   <div id="menu-backdrop" class="absolute inset-0 bg-black/50"></div>
   <nav
     aria-label="Menú principal"
@@ -100,64 +100,39 @@ const isActive = (href: string) =>
 </div>
 
 <script>
-  const ACTIVE_CLASSES = ["underline", "decoration-primary", "decoration-2", "underline-offset-4"];
+  const menu = document.getElementById("mobile-menu");
+  const panel = menu?.querySelector("nav");
+  const toggle = document.getElementById("menu-toggle");
+  const backdrop = document.getElementById("menu-backdrop");
+  const closeBtn = document.getElementById("menu-close");
 
-  function updateActiveLinks() {
-    const path = window.location.pathname;
-    document.querySelectorAll<HTMLAnchorElement>("header nav a, #mobile-menu nav a").forEach((a) => {
-      const href = a.getAttribute("href") ?? "";
-      const active = href === "/" ? path === "/" : path.startsWith(href);
-      ACTIVE_CLASSES.forEach((cls) => a.classList.toggle(cls, active));
+  if (menu && panel && toggle) {
+    const open = () => {
+      menu.classList.remove("hidden");
+      void panel.offsetWidth;
+      panel.setAttribute("data-open", "");
+      toggle.setAttribute("aria-expanded", "true");
+      document.body.style.overflow = "hidden";
+    };
+
+    const close = () => {
+      panel.removeAttribute("data-open");
+      toggle.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+      panel.addEventListener("transitionend", () => menu.classList.add("hidden"), { once: true });
+    };
+
+    toggle.addEventListener("click", open);
+    backdrop?.addEventListener("click", close);
+    closeBtn?.addEventListener("click", close);
+    menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", close));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && panel.hasAttribute("data-open")) close();
     });
   }
 
-  function initHeader() {
-    const themeToggle = document.getElementById("theme-toggle");
-    if (!themeToggle) return;
-
-    // El header persiste entre navegaciones — solo registrar eventos una vez
-    if (!themeToggle.dataset.initialized) {
-      themeToggle.dataset.initialized = "true";
-
-      themeToggle.addEventListener("click", () => {
-        const isDark = document.documentElement.classList.toggle("dark");
-        localStorage.setItem("theme", isDark ? "dark" : "light");
-      });
-
-      const menu = document.getElementById("mobile-menu");
-      const panel = menu?.querySelector("nav");
-      const toggle = document.getElementById("menu-toggle");
-      const backdrop = document.getElementById("menu-backdrop");
-      const closeBtn = document.getElementById("menu-close");
-      if (!menu || !panel || !toggle) return;
-
-      const open = () => {
-        menu.classList.remove("hidden");
-        void panel.offsetWidth;
-        panel.setAttribute("data-open", "");
-        toggle.setAttribute("aria-expanded", "true");
-        document.body.style.overflow = "hidden";
-      };
-
-      const close = () => {
-        panel.removeAttribute("data-open");
-        toggle.setAttribute("aria-expanded", "false");
-        document.body.style.overflow = "";
-        panel.addEventListener("transitionend", () => menu.classList.add("hidden"), { once: true });
-      };
-
-      toggle.addEventListener("click", open);
-      backdrop?.addEventListener("click", close);
-      closeBtn?.addEventListener("click", close);
-      menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", close));
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && panel.hasAttribute("data-open")) close();
-      });
-    }
-
-    // Siempre actualizar el link activo según la página actual
-    updateActiveLinks();
-  }
-
-  document.addEventListener("astro:page-load", initHeader);
+  document.getElementById("theme-toggle")?.addEventListener("click", () => {
+    const isDark = document.documentElement.classList.toggle("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  });
 </script>
