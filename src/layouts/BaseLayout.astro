@@ -34,13 +34,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:url" content={canonical} />
     <meta name="twitter:card" content="summary_large_image" />
 
-    {/* Evita el flash de tema claro al cargar */}
+    {/* Evita el flash de tema incorrecto al cargar */}
     <script is:inline>
-      const theme =
-        localStorage.getItem("theme") ??
-        (window.matchMedia("(prefers-color-scheme: dark)").matches
-          ? "dark"
-          : "light");
+      const theme = localStorage.getItem("theme") ?? "light";
       document.documentElement.classList.toggle("dark", theme === "dark");
     </script>
   </head>

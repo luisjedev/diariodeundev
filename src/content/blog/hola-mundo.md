@@ -4,7 +4,7 @@ description: "El primer artículo de un blog donde voy a escribir sobre código,
 pubDate: 2026-06-22
 category: "Opinión"
 tags: ["meta", "blogging", "carrera"]
-author: "Luis"
+author: "Luis Gómez"
 ---
 
 Llevaba años diciéndome que tenía que escribir. Que algún día abriría un blog,

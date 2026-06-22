@@ -4,7 +4,7 @@ description: "Después de años programando sigo sintiendo que no sé lo suficie
 pubDate: 2026-06-15
 category: "Experiencias"
 tags: ["carrera", "salud-mental", "soft-skills"]
-author: "Luis"
+author: "Luis Gómez"
 ---
 
 Hay un secreto que casi nadie cuenta en las charlas de tecnología: la mayoría

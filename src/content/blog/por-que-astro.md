@@ -4,7 +4,7 @@ description: "Un blog personal no necesita un framework de 200 KB de JavaScript.
 pubDate: 2026-06-20
 category: "Tecnología"
 tags: ["astro", "frontend", "performance"]
-author: "Luis"
+author: "Luis Gómez"
 ---
 
 Cuando decidí montar este blog tenía claro una cosa: **nada de dashboards, nada

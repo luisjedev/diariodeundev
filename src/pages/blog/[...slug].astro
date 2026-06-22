@@ -23,10 +23,11 @@ const { title, description, category, pubDate, updatedDate, author, tags } =
 <BaseLayout title={`${title} — diariodeundev`} description={description}>
   <article class="mx-auto max-w-3xl px-4 py-12">
     <a
-      href="/"
+      href="/blog"
+      onclick="history.length > 1 && (event.preventDefault(), history.back())"
       class="inline-block font-head text-sm text-muted-foreground transition-colors hover:text-foreground"
     >
-      ← Volver al diario
+      ← Volver
     </a>
 
     <header class="mt-6 border-b-2 border-border pb-6">
