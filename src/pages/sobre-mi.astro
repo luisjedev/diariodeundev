@@ -1,0 +1,41 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Card } from "@/components/retroui/Card";
+import { Badge } from "@/components/retroui/Badge";
+
+const stack = ["Astro", "TypeScript", "React", "Tailwind", "Node"];
+---
+
+<BaseLayout
+  title="Sobre mí — diariodeundev"
+  description="Quién escribe este diario y por qué."
+>
+  <section class="mx-auto max-w-3xl px-4 py-12 sm:py-16">
+    <Badge variant="surface" size="sm">Sobre mí</Badge>
+    <h1 class="mt-4 font-head text-4xl leading-tight sm:text-5xl">
+      Hola, soy quien escribe aquí.
+    </h1>
+
+    <div class="post-content mt-8">
+      <p>
+        Soy desarrollador y este es mi rincón para pensar en voz alta. Escribo
+        sobre lo que construyo, las decisiones técnicas que tomo y las lecciones
+        que me llevo (muchas veces a base de errores).
+      </p>
+      <p>
+        No pretendo tener la razón, sino dejar constancia de cómo evoluciona mi
+        forma de ver las cosas. Si algo de lo que lees te resulta útil o te hace
+        pensar, este diario habrá cumplido su objetivo.
+      </p>
+    </div>
+
+    <Card className="mt-10 block w-full">
+      <Card.Content>
+        <h2 class="font-head text-lg">Con lo que suelo trabajar</h2>
+        <div class="mt-4 flex flex-wrap gap-2">
+          {stack.map((tech) => <Badge variant="outline" size="sm">{tech}</Badge>)}
+        </div>
+      </Card.Content>
+    </Card>
+  </section>
+</BaseLayout>

@@ -1,0 +1,57 @@
+---
+const links = [
+  { href: "/", label: "Inicio" },
+  { href: "/sobre-mi", label: "Sobre mí" },
+];
+const path = Astro.url.pathname;
+const isActive = (href: string) =>
+  href === "/" ? path === "/" : path.startsWith(href);
+---
+
+<header class="sticky top-0 z-50 border-b-2 border-border bg-background">
+  <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3">
+    <a href="/" class="group inline-flex items-center gap-2">
+      <span
+        class="grid size-9 place-items-center border-2 border-border bg-primary font-head text-lg text-primary-foreground shadow-[2px_2px_0_0_var(--border)] transition-transform group-hover:-translate-y-0.5"
+        >D</span
+      >
+      <span class="font-head text-lg leading-none sm:text-xl">
+        diariodeun<span class="bg-primary px-1 text-primary-foreground">dev</span>
+      </span>
+    </a>
+
+    <nav class="flex items-center gap-1 sm:gap-3">
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              "px-2 py-1 font-head text-sm transition-colors hover:text-primary sm:text-base",
+              isActive(link.href) &&
+                "underline decoration-primary decoration-2 underline-offset-4",
+            ]}
+          >
+            {link.label}
+          </a>
+        ))
+      }
+
+      <button
+        id="theme-toggle"
+        type="button"
+        aria-label="Cambiar tema"
+        class="ml-1 grid size-9 place-items-center border-2 border-border bg-card shadow-[2px_2px_0_0_var(--border)] transition-all hover:translate-y-0.5 hover:shadow-none"
+      >
+        <svg class="size-4 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="hidden size-4 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<script is:inline>
+  document.getElementById("theme-toggle")?.addEventListener("click", () => {
+    const isDark = document.documentElement.classList.toggle("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  });
+</script>

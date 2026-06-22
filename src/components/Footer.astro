@@ -1,0 +1,27 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-16 border-t-2 border-border bg-card">
+  <div
+    class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 px-4 py-6 text-sm sm:flex-row"
+  >
+    <p class="font-head">
+      diariodeun<span class="bg-primary px-1 text-primary-foreground">dev</span>
+    </p>
+    <p class="text-muted-foreground">
+      © {year} · Escrito sin prisa con
+      <a
+        href="https://astro.build"
+        class="underline decoration-primary decoration-2 underline-offset-2 hover:text-foreground"
+        >Astro</a
+      >
+      y
+      <a
+        href="https://retroui.dev"
+        class="underline decoration-primary decoration-2 underline-offset-2 hover:text-foreground"
+        >RetroUI</a
+      >
+    </p>
+  </div>
+</footer>

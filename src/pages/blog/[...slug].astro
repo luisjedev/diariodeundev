@@ -1,0 +1,72 @@
+---
+import { getCollection, render } from "astro:content";
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Badge } from "@/components/retroui/Badge";
+import { AuthorAvatar } from "@/components/AuthorAvatar";
+import { formatDate } from "@/lib/format";
+
+export const getStaticPaths = (async () => {
+  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}) satisfies GetStaticPaths;
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const { title, description, category, pubDate, updatedDate, author, tags } =
+  post.data;
+---
+
+<BaseLayout title={`${title} — diariodeundev`} description={description}>
+  <article class="mx-auto max-w-3xl px-4 py-12">
+    <a
+      href="/"
+      class="inline-block font-head text-sm text-muted-foreground transition-colors hover:text-foreground"
+    >
+      ← Volver al diario
+    </a>
+
+    <header class="mt-6 border-b-2 border-border pb-6">
+      <Badge variant="surface" size="sm">{category}</Badge>
+
+      <h1 class="mt-4 font-head text-3xl leading-tight sm:text-5xl">
+        {title}
+      </h1>
+      <p class="mt-4 font-sans text-lg text-muted-foreground">{description}</p>
+
+      <div class="mt-6 flex items-center gap-3">
+        <AuthorAvatar name={author} className="size-10 border-2" />
+        <div class="leading-tight">
+          <p class="font-head text-sm">{author}</p>
+          <p class="font-sans text-xs text-muted-foreground">
+            <time datetime={pubDate.toISOString()}>{formatDate(pubDate)}</time>
+            {
+              updatedDate && (
+                <span> · actualizado el {formatDate(updatedDate)}</span>
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <div class="post-content mt-8">
+      <Content />
+    </div>
+
+    {
+      tags.length > 0 && (
+        <footer class="mt-10 flex flex-wrap gap-2 border-t-2 border-border pt-6">
+          {tags.map((tag) => (
+            <Badge variant="outline" size="sm">
+              #{tag}
+            </Badge>
+          ))}
+        </footer>
+      )
+    }
+  </article>
+</BaseLayout>

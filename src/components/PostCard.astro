@@ -1,0 +1,62 @@
+---
+import { Card } from "@/components/retroui/Card";
+import { Badge } from "@/components/retroui/Badge";
+import { Text } from "@/components/retroui/Text";
+import { AuthorAvatar } from "@/components/AuthorAvatar";
+import { formatDate } from "@/lib/format";
+
+interface Props {
+  href: string;
+  title: string;
+  description: string;
+  category: string;
+  pubDate: Date;
+  author: string;
+  featured?: boolean;
+}
+
+const {
+  href,
+  title,
+  description,
+  category,
+  pubDate,
+  author,
+  featured = false,
+} = Astro.props;
+---
+
+<a href={href} class="group block h-full">
+  <Card
+    className={`flex h-full w-full flex-col justify-between transition-all duration-200 group-hover:-translate-y-1 group-hover:shadow-lg ${featured ? "border-2" : ""}`}
+  >
+    <div class="p-5">
+      <div class="mb-3 flex items-center gap-3">
+        <Badge variant="surface" size="sm">{category}</Badge>
+        <time class="font-sans text-xs text-muted-foreground">
+          {formatDate(pubDate)}
+        </time>
+      </div>
+
+      <Text
+        as={featured ? "h2" : "h3"}
+        className="transition-colors group-hover:text-primary-hover"
+      >
+        {title}
+      </Text>
+
+      <p class="mt-2 line-clamp-3 font-sans text-muted-foreground">
+        {description}
+      </p>
+    </div>
+
+    <div class="flex items-center gap-2 border-t-2 border-border p-5 pt-4">
+      <AuthorAvatar name={author} className="size-8 border-2" />
+      <span class="font-head text-sm">{author}</span>
+      <span
+        class="ml-auto font-head text-sm text-primary-hover opacity-0 transition-opacity group-hover:opacity-100"
+        aria-hidden="true">Leer →</span
+      >
+    </div>
+  </Card>
+</a>
