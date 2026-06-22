@@ -99,13 +99,13 @@ const isActive = (href: string) =>
   </nav>
 </div>
 
-<script is:inline>
-  document.getElementById("theme-toggle")?.addEventListener("click", () => {
-    const isDark = document.documentElement.classList.toggle("dark");
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-  });
+<script>
+  function initHeader() {
+    document.getElementById("theme-toggle")?.addEventListener("click", () => {
+      const isDark = document.documentElement.classList.toggle("dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
 
-  (() => {
     const menu = document.getElementById("mobile-menu");
     const panel = menu?.querySelector("nav");
     const toggle = document.getElementById("menu-toggle");
@@ -115,7 +115,6 @@ const isActive = (href: string) =>
 
     const open = () => {
       menu.classList.remove("hidden");
-      // Fuerza un reflow para que arranque la transición de entrada
       void panel.offsetWidth;
       panel.setAttribute("data-open", "");
       toggle.setAttribute("aria-expanded", "true");
@@ -126,18 +125,17 @@ const isActive = (href: string) =>
       panel.removeAttribute("data-open");
       toggle.setAttribute("aria-expanded", "false");
       document.body.style.overflow = "";
-      const hide = () => menu.classList.add("hidden");
-      panel.addEventListener("transitionend", hide, { once: true });
+      panel.addEventListener("transitionend", () => menu.classList.add("hidden"), { once: true });
     };
 
     toggle.addEventListener("click", open);
     backdrop?.addEventListener("click", close);
     closeBtn?.addEventListener("click", close);
-    menu
-      .querySelectorAll("a")
-      .forEach((a) => a.addEventListener("click", close));
+    menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", close));
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && panel.hasAttribute("data-open")) close();
     });
-  })();
+  }
+
+  document.addEventListener("astro:page-load", initHeader);
 </script>
