@@ -22,18 +22,19 @@ const socials = [
 
 <footer class="mt-16 border-t-2 border-border bg-card">
   <div
-    class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 px-4 py-6 text-sm sm:flex-row"
+    class="mx-auto grid max-w-5xl grid-cols-1 items-center gap-4 px-4 py-6 text-sm sm:grid-cols-3"
   >
-    <div class="flex flex-col items-center gap-1 sm:items-start">
-      <p class="font-head">
-        diariodeun<span class="bg-primary px-1 text-primary-foreground">dev</span>
-      </p>
-      <p class="font-sans text-muted-foreground">
-        Aprendiendo en público, un commit a la vez. ☕
-      </p>
-    </div>
+    <a href="/" class="group inline-flex items-center gap-[3px]">
+      <span
+        class="grid size-9 place-items-center border-2 border-border bg-primary font-head text-lg text-primary-foreground shadow-[2px_2px_0_0_var(--border)] transition-transform group-hover:-translate-y-0.5"
+        >D</span
+      >
+      <span class="font-head text-lg leading-none sm:text-xl">
+        iariodeun<span class="bg-primary px-1 text-primary-foreground">dev</span>
+      </span>
+    </a>
 
-    <ul class="flex items-center gap-2">
+    <ul class="flex items-center justify-center gap-2">
       {
         socials.map((social) => (
           <li>
@@ -60,7 +61,7 @@ const socials = [
     </ul>
 
     <p
-      class="flex items-center gap-1 text-center text-muted-foreground sm:text-right"
+      class="flex items-center justify-center gap-1 text-muted-foreground sm:justify-end"
     >
       © {year} · Built with
       <svg
