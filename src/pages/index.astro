@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Badge } from "@/components/retroui/Badge";
 import { AuthorAvatar } from "@/components/AuthorAvatar";
+import Newsletter from "@/components/Newsletter.astro";
 import { formatDate } from "@/lib/format";
 
 const posts = (await getCollection("blog", ({ data }) => !data.draft)).sort(
@@ -10,7 +11,7 @@ const posts = (await getCollection("blog", ({ data }) => !data.draft)).sort(
 );
 
 const [featured, ...rest] = posts;
-const sidePosts = rest.slice(0, 3);
+const sidePosts = rest.slice(0, 2);
 ---
 
 <BaseLayout title="diariodeundev — opinión, experiencias y tecnología">
@@ -138,4 +139,6 @@ const sidePosts = rest.slice(0, 3);
       )
     }
   </div>
+
+  <Newsletter />
 </BaseLayout>
