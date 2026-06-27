@@ -28,7 +28,7 @@ const isActive = (href: string) =>
             <a
               href={link.href}
               class:list={[
-                "px-2 py-1 font-head text-base transition-colors hover:text-primary",
+                "px-2 py-1 font-head text-base transition-transform hover:-translate-y-0.5",
                 isActive(link.href) &&
                   "underline decoration-primary decoration-2 underline-offset-4",
               ]}
@@ -87,7 +87,7 @@ const isActive = (href: string) =>
         <a
           href={link.href}
           class:list={[
-            "border-2 border-border bg-card px-3 py-2 font-head text-base shadow-[2px_2px_0_0_var(--border)] transition-all hover:translate-y-0.5 hover:text-primary hover:shadow-none",
+            "border-2 border-border bg-card px-3 py-2 font-head text-base shadow-[2px_2px_0_0_var(--border)] transition-all hover:translate-y-0.5 hover:shadow-none",
             isActive(link.href) &&
               "underline decoration-primary decoration-2 underline-offset-4",
           ]}
