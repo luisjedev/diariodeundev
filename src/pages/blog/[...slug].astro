@@ -7,7 +7,7 @@ import { AuthorAvatar } from "@/components/AuthorAvatar";
 import { formatDate } from "@/lib/format";
 
 export const getStaticPaths = (async () => {
-  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  const posts = await getCollection("blog", ({ data }) => !data.draft && data.visible);
   return posts.map((post) => ({
     params: { slug: post.id },
     props: { post },

@@ -5,6 +5,7 @@ pubDate: 2026-06-22
 category: "Opinión"
 tags: ["meta", "blogging", "carrera"]
 author: "Luis Gómez"
+visible: false
 ---
 
 Llevaba años diciéndome que tenía que escribir. Que algún día abriría un blog,

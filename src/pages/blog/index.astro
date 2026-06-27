@@ -2,9 +2,10 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Badge } from "@/components/retroui/Badge";
+import { Empty } from "@/components/retroui/Empty";
 import { formatDate } from "@/lib/format";
 
-const posts = (await getCollection("blog", ({ data }) => !data.draft)).sort(
+const posts = (await getCollection("blog", ({ data }) => !data.draft && data.visible)).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
@@ -39,9 +40,16 @@ const gradients = [
   <div class="mx-auto max-w-5xl px-4 py-14 sm:py-20">
     {
       posts.length === 0 ? (
-        <p class="font-head text-xl text-muted-foreground">
-          Todavía no hay artículos. ¡Pronto la primera entrada!
-        </p>
+        <Empty className="mx-auto max-w-md">
+          <Empty.Content>
+            <Empty.Icon className="size-12 text-foreground" />
+            <Empty.Title className="font-head">Todavía no hay artículos</Empty.Title>
+            <Empty.Separator className="w-16" />
+            <Empty.Description className="font-sans">
+              ¡Pronto la primera entrada!
+            </Empty.Description>
+          </Empty.Content>
+        </Empty>
       ) : (
         <ul class="flex flex-col gap-14 sm:gap-20">
           {posts.map((post, i) => (
