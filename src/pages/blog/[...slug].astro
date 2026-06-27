@@ -69,5 +69,15 @@ const { title, description, category, pubDate, updatedDate, author, tags } =
         </footer>
       )
     }
+
+    <div class="mt-12 flex justify-center">
+      <a
+        href="/blog"
+        onclick="history.length > 1 && (event.preventDefault(), history.back())"
+        class="inline-flex items-center gap-2 rounded border-2 border-border bg-secondary px-7 py-3 font-head text-secondary-foreground shadow-[5px_5px_0_0_var(--primary)] transition-all hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0_0_var(--primary)]"
+      >
+        ← Volver
+      </a>
+    </div>
   </article>
 </BaseLayout>

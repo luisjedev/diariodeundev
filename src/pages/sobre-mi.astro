@@ -1,9 +1,6 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { Card } from "@/components/retroui/Card";
 import { Badge } from "@/components/retroui/Badge";
-
-const stack = ["Astro", "TypeScript", "React", "Tailwind", "Node"];
 ---
 
 <BaseLayout
@@ -13,29 +10,99 @@ const stack = ["Astro", "TypeScript", "React", "Tailwind", "Node"];
   <section class="mx-auto max-w-3xl px-4 py-12 sm:py-16">
     <Badge variant="surface" size="sm">Sobre mí</Badge>
     <h1 class="mt-4 font-head text-4xl leading-tight sm:text-5xl">
-      Hola, soy quien escribe aquí.
+      Hola, soy LuisG.
     </h1>
 
     <div class="post-content mt-8">
       <p>
-        Soy desarrollador y este es mi rincón para pensar en voz alta. Escribo
-        sobre lo que construyo, las decisiones técnicas que tomo y las lecciones
-        que me llevo (muchas veces a base de errores).
+        Tengo 30 años y llevo más de siete dedicándome al desarrollo de software.
       </p>
+
+      <h2>De mantener lo viejo a construir lo nuevo</h2>
+
       <p>
-        No pretendo tener la razón, sino dejar constancia de cómo evoluciona mi
-        forma de ver las cosas. Si algo de lo que lees te resulta útil o te hace
-        pensar, este diario habrá cumplido su objetivo.
+        Empecé como muchos: manteniendo sistemas de otra época, siendo ese junior que aterriza
+        en un proyecto sin demasiada idea de cómo funciona el mundo real. Con el tiempo fui
+        especializándome en el desarrollo de interfaces, diseñando y construyendo aplicaciones
+        desde cero con las herramientas más modernas, aunque sin dejar de lado la parte del
+        servidor cuando el proyecto lo requiere.
       </p>
+
+      <h2>En la variedad está el gusto</h2>
+
+      <p>
+        Gran parte de mi tiempo libre acaba inevitablemente dedicado a programar, experimentar
+        y aprender cosas nuevas. A lo largo de los años he trabajado y aprendido en:
+      </p>
+
+      <ul>
+        <li>Interfaces de usuario y experiencia de uso</li>
+        <li>Renderizado en servidor, rendimiento web y posicionamiento en buscadores</li>
+        <li>Tiendas online y plataformas públicas orientadas al usuario final</li>
+        <li>Herramientas internas y paneles de administración</li>
+        <li>Aplicaciones móviles, tanto nativas como multiplataforma</li>
+        <li>Videojuegos</li>
+        <li>Servicios y APIs de backend</li>
+        <li>Bases de datos, sistemas de mensajería y despliegues</li>
+        <li>Observabilidad y sistemas de diseño</li>
+        <li>Una cantidad difícil de justificar de experimentos con <strong>inteligencia artificial</strong></li>
+      </ul>
+
+      <blockquote>
+        Incluyendo algún generador local capaz de transformar mi cara en una piña en tiempo
+        real a unos impresionantes dos fotogramas por segundo.
+      </blockquote>
+
+      <h2>Lo que más me ha moldeado</h2>
+
+      <p>
+        Si hay algo que valoro más que cualquier tecnología es haber trabajado en
+        <strong>entornos muy distintos</strong>: empresas grandes y pequeñas, proyectos heredados
+        y productos nacidos desde cero, como empleado y como autónomo.
+      </p>
+
+      <p>
+        He vivido los dos extremos del día a día: el <em>modo cueva</em>, programando en
+        solitario, sacando tareas de un buzón sin hablar con nadie en días; y el
+        <em>modo cliente</em>, tomando requisitos, entendiendo sus preocupaciones y yendo
+        presencialmente a presentar las soluciones que habíamos diseñado para ellos.
+      </p>
+
+      <p>
+        He tenido la suerte de coincidir con personas brillantes, y con otras que te enseñan
+        exactamente cómo <em>no</em> hacer las cosas.
+      </p>
+
+      <p>
+        Toda esa mezcla —los entornos, los roles, la gente— es lo que más ha moldeado mi forma
+        de trabajar. Ningún curso te prepara para llegar nervioso a una demo con cliente, para
+        trabajar contracorriente cuando te contratan para rehacer algo que hizo el equipo
+        interno, o para buscarte la vida como autónomo en un país donde emprender no es
+        precisamente un camino de rosas. Eso solo lo da el tiempo y la variedad.
+      </p>
+
+      <h2>Por qué escribo</h2>
+
+      <p>
+        Aquí vuelco todo eso. No pretendo tener la razón en nada,
+        pero sí creo que años de experiencias reales —buenas, malas y directamente surrealistas—
+        dan un mínimo de criterio del que merece la pena dejar constancia.
+      </p>
+
+      <blockquote>
+        Si alguien se ve identificado con algo de lo que cuento, o le sirve para algo,
+        mejor que mejor.
+      </blockquote>
     </div>
 
-    <Card className="mt-10 block w-full">
-      <Card.Content>
-        <h2 class="font-head text-lg">Con lo que suelo trabajar</h2>
-        <div class="mt-4 flex flex-wrap gap-2">
-          {stack.map((tech) => <Badge variant="outline" size="sm">{tech}</Badge>)}
-        </div>
-      </Card.Content>
-    </Card>
+    <div class="mt-12 flex justify-center">
+      <a
+        href="/"
+        onclick="history.length > 1 && (event.preventDefault(), history.back())"
+        class="inline-flex items-center gap-2 rounded border-2 border-border bg-secondary px-7 py-3 font-head text-secondary-foreground shadow-[5px_5px_0_0_var(--primary)] transition-all hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0_0_var(--primary)]"
+      >
+        ← Volver
+      </a>
+    </div>
   </section>
 </BaseLayout>
