@@ -1,5 +1,6 @@
 import type { APIRoute } from "astro";
 import { Resend } from "resend";
+import { welcomeEmail } from "@/emails/welcome";
 
 // El endpoint se ejecuta bajo demanda (no se prerenderiza en el build).
 export const prerender = false;
@@ -49,6 +50,13 @@ export const POST: APIRoute = async ({ request }) => {
       502,
     );
   }
+
+  await resend.emails.send({
+    from: "diariodeundev.com <newsletter@diariodeundev.com>",
+    to: email.trim().toLowerCase(),
+    subject: "¡Ya eres parte de la newsletter!",
+    html: welcomeEmail(email.trim().toLowerCase()),
+  });
 
   return json({ message: "¡Suscripción confirmada!" });
 };

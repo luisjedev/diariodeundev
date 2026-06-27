@@ -1,0 +1,9 @@
+---
+import { welcomeEmail } from "@/emails/welcome";
+
+export const prerender = false;
+
+const html = welcomeEmail("tu@email.com");
+---
+
+<Fragment set:html={html} />
