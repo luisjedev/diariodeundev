@@ -37,25 +37,63 @@ export const POST: APIRoute = async ({ request }) => {
   }
 
   const resend = new Resend(apiKey);
+  const normalizedEmail = email.trim().toLowerCase();
 
-  const { error } = await resend.contacts.create({
+  // Comprobamos si el contacto ya existe para no reenviar la bienvenida.
+  const existing = await resend.contacts.get({
     audienceId,
-    email: email.trim().toLowerCase(),
-    unsubscribed: false,
+    email: normalizedEmail,
   });
 
-  if (error) {
-    return json(
-      { error: "No hemos podido completar tu suscripción. Inténtalo de nuevo." },
-      502,
-    );
+  // Ya está suscrito y activo: avisamos y no hacemos nada.
+  if (existing.data && existing.data.unsubscribed === false) {
+    return json({
+      message: "Este correo ya está suscrito a la newsletter.",
+      alreadySubscribed: true,
+    });
+  }
+
+  // Existe pero se había dado de baja: lo reactivamos.
+  if (existing.data) {
+    const { error } = await resend.contacts.update({
+      audienceId,
+      email: normalizedEmail,
+      unsubscribed: false,
+    });
+
+    if (error) {
+      return json(
+        {
+          error:
+            "No hemos podido completar tu suscripción. Inténtalo de nuevo.",
+        },
+        502,
+      );
+    }
+  } else {
+    // No existe: lo creamos.
+    const { error } = await resend.contacts.create({
+      audienceId,
+      email: normalizedEmail,
+      unsubscribed: false,
+    });
+
+    if (error) {
+      return json(
+        {
+          error:
+            "No hemos podido completar tu suscripción. Inténtalo de nuevo.",
+        },
+        502,
+      );
+    }
   }
 
   await resend.emails.send({
     from: "diariodeundev.com <newsletter@diariodeundev.com>",
-    to: email.trim().toLowerCase(),
+    to: normalizedEmail,
     subject: "¡Ya eres parte de la newsletter!",
-    html: welcomeEmail(email.trim().toLowerCase()),
+    html: welcomeEmail(normalizedEmail),
   });
 
   return json({ message: "¡Suscripción confirmada!" });

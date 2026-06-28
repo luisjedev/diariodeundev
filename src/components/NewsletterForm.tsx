@@ -34,7 +34,11 @@ export function NewsletterForm() {
       if (res.ok) {
         setEmail("");
         setConsent(false);
-        toast.success(data.message ?? "¡Suscripción confirmada!");
+        if (data.alreadySubscribed) {
+          toast.info(data.message ?? "Este correo ya está suscrito.");
+        } else {
+          toast.success(data.message ?? "¡Suscripción confirmada!");
+        }
       } else {
         toast.error(data.error ?? "Algo ha fallado. Inténtalo de nuevo.");
       }
