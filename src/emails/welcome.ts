@@ -129,9 +129,9 @@ export function welcomeEmail(email: string): string {
                     <table cellpadding="0" cellspacing="0" role="presentation">
                       <tr>
                         <td style="
-                          background-color:#000000;
-                          border:2px solid #000000;
-                          box-shadow:4px 4px 0 0 #ffdb33;
+                          background-color:#ffdb33;
+                          border:2px solid #000;
+                          box-shadow:4px 4px 0 0 #000;
                         ">
                           <a href="https://diariodeundev.com" style="
                             display:block;
@@ -139,7 +139,7 @@ export function welcomeEmail(email: string): string {
                             font-family:'Arial Black',Impact,sans-serif;
                             font-size:15px;
                             font-weight:900;
-                            color:#ffffff;
+                            color:#000;
                             text-decoration:none;
                             text-transform:uppercase;
                             letter-spacing:0.5px;
