@@ -4,9 +4,14 @@ export function welcomeEmail(email: string): string {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <meta name="supported-color-schemes" content="light" />
   <title>Bienvenido a Diario de un Dev</title>
+  <style>
+    :root { color-scheme: light; }
+  </style>
 </head>
-<body style="margin:0;padding:0;background-color:#f5ece7;font-family:Arial,sans-serif;">
+<body style="margin:0;padding:0;background-color:#f5ece7;font-family:Arial,sans-serif;color-scheme:light;">
 
   <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#f5ece7;padding:40px 16px;">
     <tr>
@@ -124,9 +129,9 @@ export function welcomeEmail(email: string): string {
                     <table cellpadding="0" cellspacing="0" role="presentation">
                       <tr>
                         <td style="
-                          background-color:#ffdb33;
-                          border:2px solid #000;
-                          box-shadow:4px 4px 0 0 #000;
+                          background-color:#000000;
+                          border:2px solid #000000;
+                          box-shadow:4px 4px 0 0 #ffdb33;
                         ">
                           <a href="https://diariodeundev.com" style="
                             display:block;
@@ -134,7 +139,7 @@ export function welcomeEmail(email: string): string {
                             font-family:'Arial Black',Impact,sans-serif;
                             font-size:15px;
                             font-weight:900;
-                            color:#000;
+                            color:#ffffff;
                             text-decoration:none;
                             text-transform:uppercase;
                             letter-spacing:0.5px;
