@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Input } from "@/components/retroui/Input";
 import { Checkbox } from "@/components/retroui/Checkbox";
 import { Toaster } from "@/components/retroui/Sonner";
+import { Loader } from "@/components/retroui/Loader";
 import { toast } from "sonner";
 
 export function NewsletterForm() {
@@ -23,6 +24,9 @@ export function NewsletterForm() {
     }
 
     setLoading(true);
+    // Bloqueo mínimo de 0.5s para evitar clicks repetidos y la carrera
+    // de suscripciones duplicadas.
+    const minDelay = new Promise((resolve) => setTimeout(resolve, 500));
     try {
       const res = await fetch("/api/subscribe", {
         method: "POST",
@@ -34,13 +38,18 @@ export function NewsletterForm() {
       if (res.ok) {
         setEmail("");
         setConsent(false);
-        toast.success(data.message ?? "¡Suscripción confirmada!");
+        if (data.alreadySubscribed) {
+          toast.info(data.message ?? "Este correo ya está suscrito.");
+        } else {
+          toast.success(data.message ?? "¡Suscripción confirmada!");
+        }
       } else {
         toast.error(data.error ?? "Algo ha fallado. Inténtalo de nuevo.");
       }
     } catch {
       toast.error("No hay conexión. Inténtalo de nuevo.");
     } finally {
+      await minDelay;
       setLoading(false);
     }
   }
@@ -61,9 +70,13 @@ export function NewsletterForm() {
           <button
             type="submit"
             disabled={loading}
-            className="shrink-0 rounded border-2 border-border bg-secondary px-6 py-3 font-head text-sm text-secondary-foreground shadow-[3px_3px_0_0_var(--primary)] transition-all hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none disabled:cursor-not-allowed disabled:opacity-60"
+            className="flex shrink-0 items-center justify-center rounded border-2 border-border bg-secondary px-6 py-3 font-head text-sm text-secondary-foreground shadow-[3px_3px_0_0_var(--primary)] transition-all hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none disabled:cursor-not-allowed disabled:opacity-60"
           >
-            {loading ? "Enviando…" : "Suscribirme →"}
+            {loading ? (
+              <Loader size="sm" aria-label="Enviando…" />
+            ) : (
+              "Suscribirme →"
+            )}
           </button>
         </div>
 
