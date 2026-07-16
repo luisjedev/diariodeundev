@@ -1,6 +1,6 @@
 ---
 title: "¿Nuestros hijos se volverán tontos si usan la IA? - Creando posibles soluciones"
-description: "¿Cuanto afectará al desarrollo de su capacidad para razonar, aprender y resolver problemas por sí mismo?"
+description: "¿Cuánto afectará al desarrollo de sus capacidades para razonar, aprender y resolver problemas por sí mismos?"
 pubDate: 2026-07-16
 category: "Experiencias"
 tags: ["inteligencia-artificial", "educacion", "desarrollo", "paternidad"]
@@ -13,7 +13,7 @@ Hace muy poquito que he sido padre por segunda vez. Mi hijo mayor va a cumplir t
 
 Me preocupa, sobre todo, cómo puede afectar al desarrollo de su capacidad para razonar, aprender y resolver problemas por sí mismo.
 
--Doy por hecho que cualquiera que lea esto, sabrá que prohibirle cosas a un niñ@/adolescente es el boomerang más peligroso que existe-
+—Doy por hecho que cualquiera que lea esto sabrá que prohibirle cosas a un niño o adolescente es el bumerán más peligroso que existe—.
 
 ## El porqué
 
@@ -25,7 +25,7 @@ Perder algo de habilidad mecánica, olvidar sintaxis concreta o sufrir cierta p�
 
 Pero la cuestión que me ha llevado a escribir este post es otra.
 
-Si ya cuesta imaginar cómo los nuevos desarrolladores post-IA van a ser capaces de frenar e intentar comprender de verdad los problemas, sin recurrir a la super-herramienta-definitiva a la primera de cambio, ¿qué podemos esperar del uso que harán nuestros hijos de todo esto?
+Si ya cuesta imaginar cómo los nuevos desarrolladores pos-IA van a ser capaces de frenar e intentar comprender de verdad los problemas, sin recurrir a la superherramienta definitiva a la primera de cambio, ¿qué podemos esperar del uso que harán nuestros hijos de todo esto?
 
 Si esto nos sucede a quienes aprendimos antes de disponer de estas ayudas, ¿qué pasará con quienes puedan utilizarlas desde su primer ejercicio o problema que no sepan resolver?
 
@@ -107,7 +107,7 @@ También estoy experimentando con mecanismos para detectar conversaciones potenc
 
 _Esta parte es mucho más seria, así que no voy a hacer bromas._
 
-Creo que a nadie le sorprenderán las barbaridades que pueden salir de un niño o adolescente cuando piensa que nadie le está viendo.
+Creo que a nadie le sorprenderán las barbaridades que pueden salir de un niño o adolescente cuando piensa que nadie lo está viendo.
 
 También es una de las áreas más delicadas del proyecto. Requiere muchas pruebas, criterios claros de privacidad, transparencia, control de falsos positivos y, probablemente, la revisión de personas con experiencia profesional en estos ámbitos.
 
@@ -125,7 +125,7 @@ Estará dirigido a quienes tengan curiosidad o quieran obtener una primera idea 
 
 El sistema es bastante completo: herramientas, guardrails, system prompts, embeddings, RAG, evaluaciones mediante LLM-as-a-judge y otras piezas.
 
-Aun así, queda muchísimo por optimizar en cuanto a gestión del contexto, evaluaciones, costes y comportamiento general —la clasificación y extracción de PDFs está siendo todo un reto, que no os extrañe algún error—
+Aun así, queda muchísimo por optimizar en cuanto a gestión del contexto, evaluaciones, costes y comportamiento general —la clasificación y la extracción de PDF están siendo todo un reto; que no os extrañe algún error—.
 
 La verdad es que, para ser un mundo relativamente nuevo, hay una cantidad absurda de cosas que aprender.
 
