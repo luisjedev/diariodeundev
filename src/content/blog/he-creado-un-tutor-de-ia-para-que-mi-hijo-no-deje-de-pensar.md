@@ -121,7 +121,7 @@ Para ofrecer una visión más clara, este sería, a grandes rasgos, el flujo ló
 
 Como tampoco quiero que esto sea un tostón, publicaré más adelante otro post centrado en cómo y con qué he construido esta aplicación.
 
-Estará dirigido a quienes tengan curiosidad o quieran obtener una primera idea de cómo crear productos que incorporen IA. Todo desde la cautela y la poca experiencia que todavía tengo en este campo. 😂
+Estará dirigido a quienes tengan curiosidad o quieran obtener una primera idea de cómo crear productos que incorporen IA. Todo desde la cautela y la poca experiencia que todavía tengo en este campo.
 
 El sistema es bastante completo: herramientas, guardrails, system prompts, embeddings, RAG, evaluaciones mediante LLM-as-a-judge y otras piezas.
 
