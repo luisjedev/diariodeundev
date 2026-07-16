@@ -1,5 +1,5 @@
 ---
-title: "He creado un tutor de IA para que mi hijo no deje de pensar"
+title: "¿Nuestros hijos se volverán tontos si usan la IA? - Creando posibles soluciones"
 description: "¿Cuanto afectará al desarrollo de su capacidad para razonar, aprender y resolver problemas por sí mismo?"
 pubDate: 2026-07-16
 category: "Experiencias"
@@ -19,15 +19,15 @@ Me preocupa, sobre todo, cómo puede afectar al desarrollo de su capacidad para 
 
 Quienes trabajamos diariamente con IA y, además, dedicamos parte de nuestro tiempo libre a desarrollar, conocemos bien esta sensación: ir a mil por hora, llevar dos o tres tareas y análisis al mismo tiempo y sentir cierta ansiedad por aprovechar cada token siempre que sea posible.
 
-Sin convertir mi experiencia personal en evidencia científica, creo que muchos reconocemos que esta forma de trabajar puede dejarnos el cerebro frito.
+Creo que muchos podemos reconocer que esta forma de trabajar a veces nos deja el cerebro frito.
 
-Perder algo de habilidad mecánica, olvidar sintaxis concreta o sufrir cierta fragmentación de la atención puede asumirse, especialmente si ya se tiene una buena base, uno se preocupa por entender lo que está haciendo y la velocidad extra en la implementación permite dedicar más tiempo a pensar y aprender sobre los sistemas que queremos construir.
+Perder algo de habilidad mecánica, olvidar sintaxis concreta o sufrir cierta pérdida de la atención puede asumirse, especialmente si ya se tiene una buena base, uno se preocupa por entender lo que está haciendo y la velocidad extra en la implementación permite dedicar más tiempo a pensar y aprender sobre los sistemas que queremos construir.
 
 Pero la cuestión que me ha llevado a escribir este post es otra.
 
-Si ya cuesta imaginar cómo los nuevos desarrolladores post-IA van a ser capaces de frenar e intentar comprender de verdad los problemas, sin recurrir a la super-herramienta-definitiva a la primera de cambio, ¿qué podemos esperar del uso que harán nuestros hijos de estas tecnologías?
+Si ya cuesta imaginar cómo los nuevos desarrolladores post-IA van a ser capaces de frenar e intentar comprender de verdad los problemas, sin recurrir a la super-herramienta-definitiva a la primera de cambio, ¿qué podemos esperar del uso que harán nuestros hijos de todo esto?
 
-Si esto nos sucede a quienes aprendimos antes de disponer de estas herramientas, ¿qué pasará con quienes puedan utilizarlas desde su primer ejercicio?
+Si esto nos sucede a quienes aprendimos antes de disponer de estas ayudas, ¿qué pasará con quienes puedan utilizarlas desde su primer ejercicio o problema que no sepan resolver?
 
 Como es de esperar, si ni siquiera nos forman desde pequeños en cuestiones tan importantes como el trabajo, la economía familiar o las relaciones, parece poco probable que recibamos una formación adecuada sobre el uso de estas tecnologías.
 
@@ -39,9 +39,7 @@ Quizás las evaluaciones escritas revelen el desastre, pero cuando toque suspend
 
 Qué será, será. 🙂
 
-Yo era un pésimo estudiante. Hablo desde el criterio de un niño vago, tramposo y siempre dispuesto a buscar el camino más corto, sin la mitad de estímulos ni de información disponibles hoy en día.
-
-Precisamente por eso soy consciente de lo peligroso que puede ser.
+Yo era un pésimo estudiante. Hablo desde el criterio de un niño vago, perezoso y siempre dispuesto a buscar el camino más corto, sin la mitad de estímulos ni de información disponibles hoy en día. Precisamente por eso soy consciente de lo peligroso que puede ser.
 
 Dándole vueltas a este tema, decidí que mi siguiente proyecto fuese <a href="https://dejamepensar.app" target="_blank" rel="noopener noreferrer">Déjame Pensar</a>. También ayudó que no tenía demasiadas ideas para mi aplicación de turno, mi recién estrenado instinto de padre v2 y la obligación de formarnos en otros campos, porque ser “solo” desarrollador hoy empieza a sentirse como…
 
@@ -51,6 +49,14 @@ _O me estoy preocupando demasiado últimamente o la que se nos viene es seria. M
 
 ## ¿Qué es Déjame Pensar?
 
+<a class="website-preview" href="https://dejamepensar.app" target="_blank" rel="noopener noreferrer" aria-label="Visitar Déjame Pensar (se abre en una pestaña nueva)">
+  <img src="/images/dejamepensar-preview.png" alt="Vista previa de la página de inicio de Déjame Pensar" loading="lazy">
+  <span class="website-preview__footer">
+    <strong>dejamepensar.app</strong>
+    <span>Visitar la web ↗</span>
+  </span>
+</a>
+
 Se trata de una aplicación en la que un estudiante puede incorporar sus propios recursos —texto plano, PDF, documentos y otros formatos— y crear un temario para estudiar con un tutor de IA especializado en esa materia.
 
 También puede indicar su edad, nivel académico, dificultad del temario, objetivo —formación personal, preparación de un examen, repaso— y el estilo de respuesta que prefiere: directo, detallado, mediante analogías, etc.
@@ -59,7 +65,7 @@ Es, simplificando mucho, una especie de ChatGPT fácilmente configurable, con pe
 
 Pero la diferencia principal que intento conseguir no está en el RAG, en la persistencia ni en la configuración.
 
-La aplicación intenta proteger el proceso de aprendizaje, incluso cuando dar directamente la respuesta sería más rápido.
+**La aplicación intenta proteger el proceso de aprendizaje, incluso cuando dar directamente la respuesta sería más rápido.**
 
 Es restrictiva por diseño, sin que el usuario tenga que explicar en cada nueva conversación que el agente debe comportarse como un profesor. Tiene una interfaz amigable y ha sido creada pensando en un posible uso por parte de menores.
 
