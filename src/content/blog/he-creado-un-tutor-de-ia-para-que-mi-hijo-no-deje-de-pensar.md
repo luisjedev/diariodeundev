@@ -1,6 +1,6 @@
 ---
 title: "He creado un tutor de IA para que mi hijo no deje de pensar"
-description: "Me preocupa, sobre todo, cómo puede afectar al desarrollo de su capacidad para razonar, aprender y resolver problemas por sí mismo."
+description: "¿Cuanto afectará al desarrollo de su capacidad para razonar, aprender y resolver problemas por sí mismo?"
 pubDate: 2026-07-16
 category: "Experiencias"
 tags: ["inteligencia-artificial", "educacion", "desarrollo", "paternidad"]
@@ -12,6 +12,8 @@ Hace muy poquito que he sido padre por segunda vez. Mi hijo mayor va a cumplir t
 ¿Cómo será su futuro dentro de seis o siete años, cuando tenga acceso a una IA muchísimo más avanzada que la actual?
 
 Me preocupa, sobre todo, cómo puede afectar al desarrollo de su capacidad para razonar, aprender y resolver problemas por sí mismo.
+
+-Doy por hecho que cualquiera que lea esto, sabrá que prohibirle cosas a un niñ@/adolescente es el boomerang más peligroso que existe-
 
 ## El porqué
 
@@ -45,7 +47,7 @@ Dándole vueltas a este tema, decidí que mi siguiente proyecto fuese <a href="h
 
 ![imagen facts](../assets/facts.png)
 
-O me estoy preocupando demasiado últimamente o la que se nos viene es seria. Mejor prevenir.
+_O me estoy preocupando demasiado últimamente o la que se nos viene es seria. Mejor prevenir._
 
 ## ¿Qué es Déjame Pensar?
 
@@ -73,7 +75,7 @@ Ante ejercicios o problemas, el agente no debería limitarse a entregar la soluc
 
 ![imagen pista](../assets/pista.png)
 
-Si ya tienes la respuesta, ¿para qué preguntas? Y si no la sabes… resuélvela, crack.
+_Si ya tienes la respuesta, ¿para qué preguntas? Y si no la sabes… resuélvela, crack._
 
 ### Límites del área de estudio
 
@@ -81,7 +83,7 @@ El agente intentará mantener la conversación dentro del área y del temario se
 
 ![imagen area](../assets/area.png)
 
-Actualmente puede resultar demasiado restrictivo. Por ejemplo, puede negarse a traducir una palabra del inglés si el alumno no está dentro de un temario de inglés.
+_Actualmente puede resultar demasiado restrictivo. Por ejemplo, puede negarse a traducir una palabra del inglés si el alumno no está dentro de un temario de inglés._
 
 Es una de las cosas que todavía hay que afinar.
 
@@ -97,7 +99,7 @@ También estoy experimentando con mecanismos para detectar conversaciones potenc
 
 ![imagen email](../assets/email.png)
 
-Esta parte es mucho más seria, así que no voy a hacer bromas.
+_Esta parte es mucho más seria, así que no voy a hacer bromas._
 
 Creo que a nadie le sorprenderán las barbaridades que pueden salir de un niño o adolescente cuando piensa que nadie le está viendo.
 

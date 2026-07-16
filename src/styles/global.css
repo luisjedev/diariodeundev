@@ -4,6 +4,7 @@
 
 @theme {
   --font-head: "Archivo Black", ui-sans-serif, system-ui, sans-serif;
+  --font-post-head: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --radius: 0px;
 
@@ -115,6 +116,13 @@
   font-family: var(--font-head);
   font-size: 1.35rem;
   margin-top: 2rem;
+}
+
+.post-bricolage > header h1,
+.post-bricolage .post-content h2,
+.post-bricolage .post-content h3 {
+  font-family: var(--font-post-head);
+  font-weight: 700;
 }
 
 .post-content a {
