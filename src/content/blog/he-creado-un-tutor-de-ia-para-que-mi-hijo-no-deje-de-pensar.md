@@ -1,5 +1,5 @@
 ---
-title: "¿Nuestros hijos se volverán tontos si usan la IA? - Creando posibles soluciones"
+title: "¿Nuestros hijos pueden perder capacidades si usan la IA? - Creando posibles soluciones"
 description: "¿Cuánto afectará al desarrollo de sus capacidades para razonar, aprender y resolver problemas por sí mismos?"
 pubDate: 2026-07-16
 category: "Experiencias"
@@ -7,13 +7,13 @@ tags: ["inteligencia-artificial", "educacion", "desarrollo", "paternidad"]
 author: "Luis Gómez"
 ---
 
-Hace muy poquito que he sido padre por segunda vez. Mi hijo mayor va a cumplir tres añitos dentro de poco y empieza el cole en septiembre, por lo que últimamente, de forma inevitable, me ha surgido una preocupación:
+Hace muy poquito que he sido padre por segunda vez. Mi hijo mayor va a cumplir tres años dentro de poco y empieza el cole en septiembre, por lo que últimamente, de forma inevitable, me ha surgido una preocupación:
 
 ¿Cómo será su futuro dentro de seis o siete años, cuando tenga acceso a una IA muchísimo más avanzada que la actual?
 
 Me preocupa, sobre todo, cómo puede afectar al desarrollo de su capacidad para razonar, aprender y resolver problemas por sí mismo.
 
-—Doy por hecho que cualquiera que lea esto sabrá que prohibirle cosas a un niño o adolescente es el bumerán más peligroso que existe—.
+—Doy por hecho que cualquiera que lea esto sabrá que prohibirle cosas a un niñ@/adolescente es el boomerang más peligroso que existe—.
 
 ## El porqué
 
@@ -39,7 +39,7 @@ Quizás las evaluaciones escritas revelen el desastre, pero cuando toque suspend
 
 Qué será, será. 🙂
 
-Yo era un pésimo estudiante. Hablo desde el criterio de un niño vago, perezoso y siempre dispuesto a buscar el camino más corto, sin la mitad de estímulos ni de información disponibles hoy en día. Precisamente por eso soy consciente de lo peligroso que puede ser.
+_Yo era un pésimo estudiante. Hablo desde el criterio de un niño vago, perezoso y siempre dispuesto a buscar el camino más corto, sin la mitad de estímulos ni de información disponibles a día de hoy. Precisamente por eso me hago una idea de lo peligroso que puede llegar a ser._
 
 Dándole vueltas a este tema, decidí que mi siguiente proyecto fuese <a href="https://dejamepensar.app" target="_blank" rel="noopener noreferrer">Déjame Pensar</a>. También ayudó que no tenía demasiadas ideas para mi aplicación de turno, mi recién estrenado instinto de padre v2 y la obligación de formarnos en otros campos, porque ser “solo” desarrollador hoy empieza a sentirse como…
 
@@ -137,7 +137,7 @@ Aunque la aplicación web actual utiliza un sistema BYOK —Bring Your Own Key o
 
 ## Conclusión
 
-¿Pueden ser el futuro de la educación aplicaciones similares, con temarios centralizados y propuestos desde el propio sistema educativo, exámenes y comunicación directa con los tutores?
+¿Pueden, aplicaciones similares, con temarios centralizados y propuestos desde el propio sistema educativo, exámenes y comunicación directa con los tutores, ser el futuro de la educación?
 
 ¿Podrá una administración que me ha solicitado el mismo certificado de nacimiento, ya digitalizado, para cinco trámites similares durante la última semana, crear sistemas modernos y adaptarse a lo que se nos viene encima?
 
