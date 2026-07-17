@@ -7,13 +7,13 @@ tags: ["inteligencia-artificial", "educacion", "desarrollo", "paternidad"]
 author: "Luis Gómez"
 ---
 
-Hace muy poquito que he sido padre por segunda vez. Mi hijo mayor va a cumplir tres años dentro de poco y empieza el cole en septiembre, por lo que últimamente, de forma inevitable, me ha surgido una preocupación:
+Hace muy poquito que he sido padre por segunda vez. Mi hijo mayor va a cumplir tres años dentro de poco y empieza el colegio en septiembre, por lo que últimamente, de forma inevitable, me ha surgido una preocupación:
 
 ¿Cómo será su futuro dentro de seis o siete años, cuando tenga acceso a una IA muchísimo más avanzada que la actual?
 
 Me preocupa, sobre todo, cómo puede afectar al desarrollo de su capacidad para razonar, aprender y resolver problemas por sí mismo.
 
-—Doy por hecho que cualquiera que lea esto sabrá que prohibirle cosas a un niñ@/adolescente es el boomerang más peligroso que existe—.
+—Doy por hecho que cualquiera que lea esto sabrá que prohibirle cosas a un niñ@/adolescente no da muy buen resultado—.
 
 ## El porqué
 
@@ -69,7 +69,7 @@ Pero la diferencia principal que intento conseguir no está en el RAG, en la per
 
 Es restrictiva por diseño, sin que el usuario tenga que explicar en cada nueva conversación que el agente debe comportarse como un profesor. Tiene una interfaz amigable y ha sido creada pensando en un posible uso por parte de menores.
 
-Tampoco os flipéis. Solo es un prototipo que he construido en un par de semanas.
+Tampoco mucho más, no os flipéis. Solo es un prototipo que he construido en un par de semanas. Quizás si que tenga una funcionalidad extra para realizar examenes tipo test y de desarrollo cuando publique este post, pero ya está.
 
 ## Cómo funciona
 
@@ -105,8 +105,6 @@ También estoy experimentando con mecanismos para detectar conversaciones potenc
 
 ![imagen email](../assets/email.png)
 
-_Esta parte es mucho más seria, así que no voy a hacer bromas._
-
 Creo que a nadie le sorprenderán las barbaridades que pueden salir de un niño o adolescente cuando piensa que nadie lo está viendo.
 
 También es una de las áreas más delicadas del proyecto. Requiere muchas pruebas, criterios claros de privacidad, transparencia, control de falsos positivos y, probablemente, la revisión de personas con experiencia profesional en estos ámbitos.
@@ -137,9 +135,7 @@ Aunque la aplicación web actual utiliza un sistema BYOK —Bring Your Own Key o
 
 ## Conclusión
 
-¿Pueden, aplicaciones similares, con temarios centralizados y propuestos desde el propio sistema educativo, exámenes y comunicación directa con los tutores, ser el futuro de la educación? 
-
-¿Os imaginais que cosas se podrían hacer con nuevas tecnologías como chatGPT voice en tiempo real, y un agente bien entrenado?
+¿Podrían, aplicaciones similares, con temarios centralizados y pre-asignados desde el propio sistema educativo, exámenes y comunicación directa con los tutores, ser el futuro de la educación? 
 
 ¿Podrá una administración que me ha solicitado el mismo certificado de nacimiento, ya digitalizado, para cinco trámites similares durante la última semana, crear sistemas modernos y adaptarse a lo que se nos viene encima?
 
