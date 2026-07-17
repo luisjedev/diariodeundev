@@ -45,7 +45,7 @@ Dándole vueltas a este tema, decidí que mi siguiente proyecto fuese <a href="h
 
 ![imagen facts](../assets/facts.png)
 
-_O me estoy preocupando demasiado últimamente o la que se nos viene es seria. Mejor prevenir._
+_La que se nos viene encima es seria. Mejor prevenir._
 
 ## ¿Qué es Déjame Pensar?
 
@@ -137,7 +137,9 @@ Aunque la aplicación web actual utiliza un sistema BYOK —Bring Your Own Key o
 
 ## Conclusión
 
-¿Pueden, aplicaciones similares, con temarios centralizados y propuestos desde el propio sistema educativo, exámenes y comunicación directa con los tutores, ser el futuro de la educación?
+¿Pueden, aplicaciones similares, con temarios centralizados y propuestos desde el propio sistema educativo, exámenes y comunicación directa con los tutores, ser el futuro de la educación? 
+
+¿Os imaginais que cosas se podrían hacer con nuevas tecnologías como chatGPT voice en tiempo real, y un agente bien entrenado?
 
 ¿Podrá una administración que me ha solicitado el mismo certificado de nacimiento, ya digitalizado, para cinco trámites similares durante la última semana, crear sistemas modernos y adaptarse a lo que se nos viene encima?
 
@@ -147,8 +149,8 @@ A saber.
 
 Lo mejor que podemos hacer es tomar conciencia, entender cómo funciona la tecnología y educar sobre su uso, sus posibilidades y los peligros que puede tener.
 
-Te invito a suscribirte a este blog desde la página principal de diariodeundev.com.
+Si te ha gustado y quieres estar al día de las nuevas publicaciones, suscríbete a la newsletter que hay más abajo o en la página principal.
 
-Gracias si has llegado hasta aquí, incluso si eres PM.
+Gracias si has llegado hasta aquí, incluso si eres un PM.
 
 Paz.
