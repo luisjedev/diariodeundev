@@ -4,6 +4,7 @@ import type { GetStaticPaths } from "astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Badge } from "@/components/retroui/Badge";
 import { AuthorAvatar } from "@/components/AuthorAvatar";
+import Newsletter from "@/components/Newsletter.astro";
 import { formatDate } from "@/lib/format";
 
 export const getStaticPaths = (async () => {
@@ -87,4 +88,6 @@ const { title, description, category, pubDate, updatedDate, author, tags } =
       </a>
     </div>
   </article>
+
+  <Newsletter />
 </BaseLayout>
