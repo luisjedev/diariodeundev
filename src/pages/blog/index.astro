@@ -56,12 +56,12 @@ const gradients = [
             <li>
               <a
                 href={`/blog/${post.id}`}
-                class="group flex items-center gap-5 sm:gap-10"
+                class="group flex flex-col items-stretch gap-6 sm:flex-row sm:items-center sm:gap-10"
               >
                 {/* Miniatura (degradado en lugar de imagen) */}
-                <div class="shrink-0">
+                <div class="w-full sm:w-auto sm:shrink-0">
                   <div
-                    class="h-[110px] w-[140px] rounded-lg border-2 border-border shadow-[6px_6px_0_0_var(--primary)] transition-all duration-200 group-hover:-translate-x-0.5 group-hover:-translate-y-0.5 group-hover:shadow-[9px_9px_0_0_var(--primary)] sm:h-[150px] sm:w-[200px]"
+                    class="h-[180px] w-full rounded-lg border-2 border-border shadow-[6px_6px_0_0_var(--primary)] transition-all duration-200 group-hover:-translate-x-0.5 group-hover:-translate-y-0.5 group-hover:shadow-[9px_9px_0_0_var(--primary)] sm:h-[150px] sm:w-[200px]"
                     style={`background:${gradients[i % gradients.length]}`}
                   />
                 </div>
