@@ -1,5 +1,5 @@
 ---
-title: "¿Nuestros hijos pueden perder capacidades si usan la IA? - Creando posibles soluciones"
+title: "¿Perderán capacidades nuestros hijos por el uso de IA? - Explorando posibles soluciones"
 description: "¿Cuánto afectará al desarrollo de sus capacidades para razonar, aprender y resolver problemas por sí mismos?"
 cover: "../assets/portada.png"
 pubDate: 2026-07-16
@@ -58,19 +58,19 @@ _La que se nos viene encima es seria. Mejor prevenir._
   </span>
 </a>
 
-Se trata de una aplicación en la que un estudiante puede incorporar sus propios recursos —texto plano, PDF, documentos y otros formatos— y crear un temario para estudiar con un tutor de IA especializado en esa materia.
+Se trata de una aplicación en la que un estudiante puede incorporar sus propios recursos —texto plano, PDF, documentos..— crear un temario para estudiar con un tutor de IA especializado en esa materia e incluso realizar exámenes personalizados y corregidos sobre la marcha de manera ilimitada.
 
 También puede indicar su edad, nivel académico, dificultad del temario, objetivo —formación personal, preparación de un examen, repaso— y el estilo de respuesta que prefiere: directo, detallado, mediante analogías, etc.
 
-Es, simplificando mucho, una especie de ChatGPT fácilmente configurable, con persistencia, un sistema RAG por debajo y mecanismos de seguridad y control parental.
+Es, simplificando mucho, una especie de ChatGPT fácilmente configurable, con persistencia, un sistema RAG por debajo, exámenes y mecanismos de seguridad y control parental.
 
 Pero la diferencia principal que intento conseguir no está en el RAG, en la persistencia ni en la configuración.
 
 **La aplicación intenta proteger el proceso de aprendizaje, incluso cuando dar directamente la respuesta sería más rápido.**
 
-Es restrictiva por diseño, sin que el usuario tenga que explicar en cada nueva conversación que el agente debe comportarse como un profesor. Tiene una interfaz amigable y ha sido creada pensando en un posible uso por parte de menores.
+Es restrictiva por diseño, proactiva -sin que el usuario tenga que explicar en cada nueva conversación que el agente debe comportarse como un profesor-. Tiene una interfaz amigable y ha sido creada pensando en un posible uso por parte de menores.
 
-Tampoco mucho más, no os flipéis. Solo es un prototipo que he construido en un par de semanas. Quizás si que tenga una funcionalidad extra para realizar examenes tipo test y de desarrollo cuando publique este post, pero ya está.
+Tampoco mucho más, no os flipéis. Solo es un prototipo que he construido en 2-3 semanas.
 
 ## Cómo funciona
 
@@ -120,8 +120,8 @@ Para ofrecer una visión más clara, este sería, a grandes rasgos, el flujo ló
 
 Como tampoco quiero que esto sea un tostón, publicaré más adelante otro post centrado en cómo y con qué he construido esta aplicación.
 
-Estará dirigido a quienes tengan curiosidad o quieran obtener una primera idea de cómo crear productos que incorporen IA. Todo desde la cautela y la poca experiencia que todavía tengo en este campo.
-
+Estará dirigido a quienes tengan curiosidad o quieran obtener una primera idea de cómo crear productos que incorporen IA. Si alguien tiene alguna duda particular o le interesa el tema, puede contactar conmigo por LinkedIn
+ 
 El sistema es bastante completo: herramientas, guardrails, system prompts, embeddings, RAG, evaluaciones mediante LLM-as-a-judge y otras piezas.
 
 Aun así, queda muchísimo por optimizar en cuanto a gestión del contexto, evaluaciones, costes y comportamiento general —la clasificación y la extracción de PDF están siendo todo un reto; que no os extrañe algún error—.
