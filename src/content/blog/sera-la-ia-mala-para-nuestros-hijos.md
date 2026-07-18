@@ -1,6 +1,7 @@
 ---
 title: "¿Nuestros hijos pueden perder capacidades si usan la IA? - Creando posibles soluciones"
 description: "¿Cuánto afectará al desarrollo de sus capacidades para razonar, aprender y resolver problemas por sí mismos?"
+cover: "../assets/portada.png"
 pubDate: 2026-07-16
 category: "Experiencias"
 tags: ["inteligencia-artificial", "educacion", "desarrollo", "paternidad"]

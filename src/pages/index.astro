@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Badge } from "@/components/retroui/Badge";
 import { AuthorAvatar } from "@/components/AuthorAvatar";
@@ -53,16 +54,27 @@ const sidePosts = rest.slice(0, 2);
           <article class="group lg:col-span-2">
             <div class="block h-full">
               <div class="grid h-full overflow-hidden rounded border-2 border-border bg-card shadow-[8px_8px_0_0_var(--border)] sm:grid-cols-2">
-                {/* Panel decorativo (en lugar de imagen) */}
+                {/* Portada */}
                 <div class="relative grid min-h-[260px] place-items-center overflow-hidden border-border bg-primary text-primary-foreground max-sm:border-b-2 sm:border-r-2">
+                  {featured.data.cover ? (
+                    <Image
+                      src={featured.data.cover}
+                      alt={`Portada de ${featured.data.title}`}
+                      widths={[480, 768, 1152]}
+                      sizes="(max-width: 640px) 100vw, 50vw"
+                      quality={95}
+                      class="absolute inset-0 size-full object-cover"
+                    />
+                  ) : (
+                    <span
+                      class="font-head text-[8rem] leading-none opacity-90"
+                      aria-hidden="true">D</span
+                    >
+                  )}
                   <span class="absolute left-3 top-3 bg-foreground px-2 py-1 font-head text-xs uppercase tracking-wider text-background">
                     Destacado
                   </span>
-                  <span
-                    class="font-head text-[8rem] leading-none opacity-90"
-                    aria-hidden="true">D</span
-                  >
-                  <span class="absolute bottom-3 right-3 font-head text-xs uppercase tracking-[0.2em] opacity-70">
+                  <span class="absolute bottom-3 right-3 bg-foreground px-2 py-1 font-head text-xs uppercase tracking-[0.2em] text-background">
                     diariodeundev
                   </span>
                 </div>
