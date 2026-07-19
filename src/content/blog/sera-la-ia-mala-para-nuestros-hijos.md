@@ -1,5 +1,5 @@
 ---
-title: "¿Perderán capacidades nuestros hijos por el uso de IA? - Explorando posibles soluciones"
+title: "¿Perderán capacidades nuestros hijos por usar la IA? Explorando posibles soluciones"
 description: "¿Cuánto afectará al desarrollo de sus capacidades para razonar, aprender y resolver problemas por sí mismos?"
 cover: "../assets/portada.png"
 pubDate: 2026-07-16
@@ -14,9 +14,9 @@ Hace muy poquito que he sido padre por segunda vez. Mi hijo mayor va a cumplir t
 
 Me preocupa, sobre todo, cómo puede afectar al desarrollo de su capacidad para razonar, aprender y resolver problemas por sí mismo.
 
-—Doy por hecho que cualquiera que lea esto sabrá que prohibirle cosas a un niñ@/adolescente no da muy buen resultado—.
+_Doy por hecho que cualquiera que lea esto sabrá que prohibirles cosas a niños y adolescentes no da muy buen resultado._
 
-## El por qué
+## El origen de la preocupación
 
 Quienes trabajamos diariamente con IA y, además, dedicamos parte de nuestro tiempo libre a desarrollar, conocemos bien esta sensación: ir a mil por hora, llevar dos o tres tareas y análisis al mismo tiempo y sentir cierta ansiedad por aprovechar cada token siempre que sea posible.
 
@@ -36,13 +36,13 @@ Es una pena, porque tienen un potencial didáctico enorme. Sin embargo, no podem
 
 Seguramente acabaremos jugando a policías y ladrones: profesores prohibiendo su uso y alumnos expertos en camuflarlo.
 
-Quizás las evaluaciones escritas revelen el desastre, pero cuando toque suspender a más del 50 % de una clase, no tengo claro por qué solución se decantará nuestro sistema: si por asumir el problema y tomar medidas o por bajar el nivel para mantener un porcentaje aceptable de aprobados.
+Quizás las evaluaciones escritas revelen el desastre, pero cuando toque suspender a más del 50 % de una clase, no tengo claro por qué solución se decantará nuestro sistema: asumir el problema y tomar medidas o bajar el nivel para mantener un porcentaje aceptable de aprobados.
 
 Qué será, será. 🙂
 
-_Yo era un pésimo estudiante. Hablo desde el criterio de un niño vago, perezoso y siempre dispuesto a buscar el camino más corto, sin la mitad de estímulos ni de información disponibles a día de hoy. Precisamente por eso me hago una idea de lo peligroso que puede llegar a ser._
+_Yo era un pésimo estudiante. Hablo desde la perspectiva de un niño vago, perezoso y siempre dispuesto a buscar el camino más corto, sin la mitad de estímulos ni de información disponibles a día de hoy. Precisamente por eso me hago una idea de lo peligroso que puede llegar a ser._
 
-Dándole vueltas a este tema, decidí que mi siguiente proyecto fuese <a href="https://dejamepensar.app" target="_blank" rel="noopener noreferrer">Déjame Pensar</a>. También ayudó que no tenía demasiadas ideas para mi aplicación de turno, mi recién estrenado instinto de padre v2 y la obligación de formarnos en otros campos, porque ser “solo” desarrollador hoy empieza a sentirse como…
+Dándole vueltas a este tema, decidí que mi siguiente proyecto fuese <a href="https://dejamepensar.app" target="_blank" rel="noopener noreferrer">Déjame Pensar</a>. También influyeron mi falta de ideas para la aplicación de turno, mi recién estrenado instinto de padre v2 y la necesidad de formarnos en otros campos, porque ser “solo” desarrollador hoy empieza a sentirse como…
 
 ![imagen facts](../assets/facts.png)
 
@@ -58,7 +58,7 @@ _La que se nos viene encima es seria. Mejor prevenir._
   </span>
 </a>
 
-Se trata de una aplicación en la que un estudiante puede incorporar sus propios recursos —texto plano, PDF, documentos..— crear un temario para estudiar con un tutor de IA especializado en esa materia e incluso realizar exámenes personalizados y corregidos sobre la marcha de manera ilimitada.
+Se trata de una aplicación en la que un estudiante puede incorporar sus propios recursos —texto plano, PDF, documentos…—, crear un temario para estudiar con un tutor de IA especializado en esa materia e incluso realizar exámenes personalizados y corregidos sobre la marcha de manera ilimitada.
 
 También puede indicar su edad, nivel académico, dificultad del temario, objetivo —formación personal, preparación de un examen, repaso— y el estilo de respuesta que prefiere: directo, detallado, mediante analogías, etc.
 
@@ -68,9 +68,9 @@ Pero la diferencia principal que intento conseguir no está en el RAG, en la per
 
 **La aplicación intenta proteger el proceso de aprendizaje, incluso cuando dar directamente la respuesta sería más rápido.**
 
-Es restrictiva por diseño, proactiva -sin que el usuario tenga que explicar en cada nueva conversación que el agente debe comportarse como un profesor-. Tiene una interfaz amigable y ha sido creada pensando en un posible uso por parte de menores.
+Es restrictiva por diseño, proactiva —sin que el usuario tenga que explicar en cada nueva conversación que el agente debe comportarse como un profesor—. Tiene una interfaz amigable y ha sido creada pensando en un posible uso por parte de menores.
 
-Tampoco mucho más, no os flipéis. Solo es un prototipo que he construido en 2-3 semanas.
+Tampoco mucho más, no os flipéis. Solo es un prototipo que he construido en dos o tres semanas.
 
 ## Cómo funciona
 
@@ -88,7 +88,7 @@ _Si ya tienes la respuesta, ¿para qué preguntas? Y si no la sabes… resuélve
 
 El agente intentará mantener la conversación dentro del área y del temario seleccionado.
 
-![imagen area](../assets/area.png)
+![imagen del área](../assets/area.png)
 
 _Actualmente puede resultar demasiado restrictivo. Por ejemplo, puede negarse a traducir una palabra del inglés si el alumno no está dentro de un temario de inglés._
 
@@ -106,11 +106,11 @@ También estoy experimentando con mecanismos para detectar conversaciones potenc
 
 ![imagen email](../assets/email.png)
 
-Creo que a nadie le sorprenderán las barbaridades que pueden salir de un niño o adolescente cuando piensa que nadie lo está viendo.
+Creo que a nadie le sorprenderán las barbaridades que puede decir un niño o adolescente cuando piensa que nadie lo está viendo.
 
 También es una de las áreas más delicadas del proyecto. Requiere muchas pruebas, criterios claros de privacidad, transparencia, control de falsos positivos y, probablemente, la revisión de personas con experiencia profesional en estos ámbitos.
 
-No considero que este problema esté resuelto por añadir un par de guardrails y un prompt bonito.
+No considero que este problema se resuelva con un par de guardrails y un prompt bonito.
 
 Para ofrecer una visión más clara, este sería, a grandes rasgos, el flujo lógico de la aplicación:
 
@@ -120,15 +120,15 @@ Para ofrecer una visión más clara, este sería, a grandes rasgos, el flujo ló
 
 Como tampoco quiero que esto sea un tostón, publicaré más adelante otro post centrado en cómo y con qué he construido esta aplicación.
 
-Estará dirigido a quienes tengan curiosidad o quieran obtener una primera idea de cómo crear productos que incorporen IA. Si alguien tiene alguna duda particular o le interesa el tema, puede contactar conmigo por LinkedIn
- 
+Estará dirigido a quienes tengan curiosidad o quieran obtener una primera idea de cómo crear productos que incorporen IA. Si alguien tiene alguna duda particular o le interesa el tema, puede contactar conmigo por LinkedIn.
+
 El sistema es bastante completo: herramientas, guardrails, system prompts, embeddings, RAG, evaluaciones mediante LLM-as-a-judge y otras piezas.
 
-Aun así, queda muchísimo por optimizar en cuanto a gestión del contexto, evaluaciones, costes y comportamiento general —la clasificación y la extracción de PDF están siendo todo un reto; que no os extrañe algún error—.
+Aun así, queda muchísimo por optimizar en cuanto a gestión del contexto, evaluaciones, costes y comportamiento general —la clasificación y la extracción de contenido de los PDF están siendo todo un reto; que no os extrañe algún error—.
 
 La verdad es que, para ser un mundo relativamente nuevo, hay una cantidad absurda de cosas que aprender.
 
-También estoy trabajando en una versión completamente local y pública, para que quien quiera pueda descargarla en su PC, conectar su propia API key de OpenAI —ya explicaré el porqué— o utilizar un modelo local.
+También estoy trabajando en una versión completamente local y pública para que quien quiera pueda descargarla en su PC, conectar su propia clave de API de OpenAI —ya explicaré el porqué— o utilizar un modelo local.
 
 De esta forma podría usarse sin conexión a servicios externos y de manera completamente privada.
 
@@ -136,7 +136,7 @@ Aunque la aplicación web actual utiliza un sistema BYOK —Bring Your Own Key o
 
 ## Conclusión
 
-¿Podrían, aplicaciones similares, con temarios centralizados y pre-asignados desde el propio sistema educativo, exámenes y comunicación directa con los tutores, ser el futuro de la educación? 
+¿Podrían aplicaciones similares, con temarios centralizados y preasignados desde el propio sistema educativo, exámenes y comunicación directa con los tutores, ser el futuro de la educación?
 
 ¿Podrá una administración que me ha solicitado el mismo certificado de nacimiento, ya digitalizado, para cinco trámites similares durante la última semana, crear sistemas modernos y adaptarse a lo que se nos viene encima?
 
@@ -144,7 +144,7 @@ Aunque la aplicación web actual utiliza un sistema BYOK —Bring Your Own Key o
 
 A saber.
 
-Lo mejor que podemos hacer es tomar conciencia, entender cómo funciona la tecnología y educar sobre su uso, sus posibilidades y los peligros que puede tener.
+Lo mejor que podemos hacer es tomar conciencia, entender cómo funciona la tecnología y educar sobre su uso, sus posibilidades y sus riesgos.
 
 Si te ha gustado y quieres estar al día de las nuevas publicaciones, suscríbete a la newsletter que hay más abajo o en la página principal.
 
