@@ -16,7 +16,7 @@ Me preocupa, sobre todo, cómo puede afectar al desarrollo de su capacidad para 
 
 —Doy por hecho que cualquiera que lea esto sabrá que prohibirle cosas a un niñ@/adolescente no da muy buen resultado—.
 
-## El porqué
+## El por qué
 
 Quienes trabajamos diariamente con IA y, además, dedicamos parte de nuestro tiempo libre a desarrollar, conocemos bien esta sensación: ir a mil por hora, llevar dos o tres tareas y análisis al mismo tiempo y sentir cierta ansiedad por aprovechar cada token siempre que sea posible.
 
