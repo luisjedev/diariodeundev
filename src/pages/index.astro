@@ -92,7 +92,9 @@ const sidePosts = rest.slice(0, 2);
                   </div>
 
                   <h2 class="font-head text-2xl leading-tight decoration-primary decoration-2 underline-offset-4 group-hover:underline sm:text-3xl">
-                    {featured.data.title}
+                    <a href={`/blog/${featured.id}`}>
+                      {featured.data.title}
+                    </a>
                   </h2>
 
                   <p class="mt-3 line-clamp-3 font-sans text-muted-foreground">
