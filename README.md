@@ -1,95 +1,43 @@
-# diariodeundev
+<div align="center">
 
-Blog personal de un desarrollador — opinión, experiencias y tecnología.
-Sitio estático construido con **Astro**, estilo retro/neobrutalista con el
-sistema de diseño de **[RetroUI](https://retroui.dev)**, y desplegado en
-**Vercel**.
+# Diario de un Dev
 
-🌐 [diariodeundev.com](https://diariodeundev.com)
+### Opinión, experiencias y tecnología escritas sin prisa.
 
-## ⚙️ Stack
+[**Leer el blog →**](https://diariodeundev.com)
 
-- **[Astro](https://astro.build)** — generación estática (cero JS por defecto).
-- **[RetroUI](https://retroui.dev)** — componentes vía registro de `shadcn`
-  (`@retroui/*`), estética neobrutalista.
-- **Tailwind CSS v4** — tema y tokens en `src/styles/global.css`.
-- **React** — solo para los componentes de RetroUI (renderizados estáticos,
-  sin hidratación).
-- **TypeScript** + content collections para los artículos en Markdown.
+<img src="./public/og.png" alt="Portada de Diario de un Dev" width="100%" />
 
-## ✍️ Escribir un artículo nuevo
+</div>
 
-Crea un archivo `.md` (o `.mdx`) en `src/content/blog/`. El nombre del archivo
-es la URL (`mi-articulo.md` → `/blog/mi-articulo`). Markdown admite HTML inline.
+## Un diario sobre el oficio de crear software
 
-```md
----
-title: "Título del artículo"
-description: "Resumen corto para listados y SEO."
-pubDate: 2026-06-22
-category: "Tecnología" # Opinión | Experiencias | Tecnología | ...
-tags: ["astro", "frontend"]
-author: "Luis"
-draft: false # ponlo en true para que no se publique
----
+**Diario de un Dev** es mi rincón personal para escribir sobre desarrollo web, inteligencia artificial y todo lo que voy aprendiendo por el camino.
 
-Tu contenido en **Markdown** aquí.
-```
+Aquí tienen cabida las decisiones técnicas, los errores que terminan enseñando algo, las ideas todavía a medio formar y la parte menos visible de trabajar como desarrollador. Sin fórmulas mágicas, sin contenido de relleno y sin postureo.
 
-El esquema y los valores por defecto están en `src/content.config.ts`.
+## Qué encontrarás
 
-## 🧞 Comandos
+- Experiencias reales del día a día como desarrollador.
+- Reflexiones sobre tecnología e inteligencia artificial.
+- Aprendizajes, decisiones y errores construyendo productos.
+- Opinión personal sobre cómo cambia nuestro oficio.
+- Artículos escritos cuando hay algo que merece la pena contar.
 
-Se ejecutan desde la raíz del proyecto:
+## El blog por dentro
 
-| Comando         | Acción                                       |
-| :-------------- | :------------------------------------------- |
-| `pnpm install`  | Instala dependencias                         |
-| `pnpm dev`      | Servidor local en `localhost:4321`           |
-| `pnpm build`    | Compila el sitio a `./dist/`                 |
-| `pnpm preview`  | Previsualiza el build antes de desplegar     |
+El sitio está construido con **Astro**, artículos en **Markdown y MDX** y una interfaz retro/neobrutalista basada en **RetroUI** y **Tailwind CSS**. Los elementos interactivos utilizan pequeñas islas de **React** y la newsletter se integra con **Resend**.
 
-### Añadir más componentes de RetroUI
+El despliegue se realiza en **Vercel**, junto con Web Analytics y Speed Insights.
 
-```sh
-pnpm dlx shadcn@latest add @retroui/<componente>
-```
+## Enlace
 
-(El registro `@retroui` ya está configurado en `components.json`.)
-
-## 📁 Estructura
-
-```text
-src/
-├── components/
-│   ├── retroui/         # Componentes de RetroUI (Button, Card, Text, Badge, Avatar)
-│   ├── AuthorAvatar.tsx # Wrapper React del Avatar para usarlo en .astro
-│   ├── Header.astro
-│   ├── Footer.astro
-│   └── PostCard.astro
-├── content/blog/        # Los artículos en Markdown
-├── layouts/BaseLayout.astro
-├── lib/                 # utils (cn) y helpers
-├── pages/
-│   ├── index.astro       # Listado del blog
-│   ├── sobre-mi.astro
-│   ├── 404.astro
-│   └── blog/[...slug].astro  # Página de cada artículo
-└── styles/global.css    # Tema RetroUI + estilos del contenido
-```
-
-## 🚀 Despliegue en Vercel
-
-El sitio es 100% estático. En Vercel:
-
-1. Importa el repositorio.
-2. Framework Preset: **Astro** (autodetectado).
-3. Build: `pnpm build` · Output: `dist` (autodetectado).
-
-No hace falta configuración adicional ni variables de entorno.
+🌐 **[https://diariodeundev.com](https://diariodeundev.com)**
 
 ---
 
-> Estética retro cortesía de [RetroUI](https://retroui.dev). El "bloque de blog
-> tipo 2" se puede incorporar más adelante con el MCP de RetroUI; el listado
-> actual replica esa disposición (destacado + grid de tarjetas).
+<div align="center">
+
+Escrito y construido por **Luis**.
+
+</div>
