@@ -3,6 +3,12 @@ dist/
 
 # local documentation
 docs/
+
+# local editor and agent configuration
+.agents/
+.claude/
+.vscode/
+
 # generated types
 .astro/
 .playwright-mcp/
