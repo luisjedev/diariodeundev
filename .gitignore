@@ -1,5 +1,8 @@
 # build output
 dist/
+
+# local documentation
+docs/
 # generated types
 .astro/
 .playwright-mcp/
