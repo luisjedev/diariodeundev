@@ -30,20 +30,6 @@ El sitio está construido con **Astro**, artículos en **Markdown y MDX** y una 
 
 El despliegue se realiza en **Vercel**, junto con Web Analytics y Speed Insights.
 
-## Newsletter
-
-Los nuevos artículos se anuncian mediante borradores de Broadcasts en Resend. Las variables `RESEND_API_KEY` y `RESEND_SEGMENT_ID` deben estar configuradas en `.env` (`RESEND_AUDIENCE_ID` sigue admitida por compatibilidad).
-
-```bash
-# Envía una prueba a una sola dirección
-pnpm newsletter:test esto-sirve-para-algo correo@ejemplo.com
-
-# Crea un borrador para toda la audiencia; nunca lo envía automáticamente
-pnpm newsletter:create esto-sirve-para-algo
-```
-
-Si no se indica el slug al crear el borrador, se utiliza el último post publicado y visible. Durante el build se genera en `public/images/newsletter/` una versión optimizada de la portada para incluirla en el correo. El envío definitivo se revisa, programa o confirma desde el panel de Resend.
-
 ## Enlace
 
 🌐 **[https://diariodeundev.com](https://diariodeundev.com)**
