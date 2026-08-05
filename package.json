@@ -7,9 +7,12 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "prebuild": "node scripts/prepare-newsletter-images.mjs",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "newsletter:create": "node --env-file=.env scripts/newsletter.mjs draft",
+    "newsletter:test": "node --env-file=.env scripts/newsletter.mjs test"
   },
   "dependencies": {
     "@astrojs/mdx": "^7.0.3",
@@ -33,7 +36,8 @@
   },
   "devDependencies": {
     "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3"
+    "@types/react-dom": "^19.2.3",
+    "gray-matter": "^4.0.3"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
