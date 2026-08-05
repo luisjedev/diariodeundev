@@ -136,6 +136,19 @@ const sidePosts = rest.slice(0, 2);
                     {post.data.title}
                   </h3>
 
+                  {sidePosts.length === 1 && post.data.cover && (
+                    <div class="relative mt-4 min-h-[180px] flex-1 overflow-hidden rounded border-2 border-border">
+                      <Image
+                        src={post.data.cover}
+                        alt={`Portada de ${post.data.title}`}
+                        widths={[320, 480, 640]}
+                        sizes="(max-width: 1024px) 100vw, 33vw"
+                        quality={95}
+                        class="absolute inset-0 size-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                  )}
+
                   <div class="mt-auto pt-4 flex items-center gap-2">
                     <AuthorAvatar name={post.data.author} className="size-7 border-2" />
                     <span class="font-head text-sm">{post.data.author}</span>
