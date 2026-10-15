@@ -20,7 +20,7 @@ Sin embargo, cuando salgo de mi burbuja, noto que la realidad que vive mucha gen
 
 En mi día a día, estoy en contacto con personas de todo tipo: algunas más inquietas, otras más acomodadas y amigos completamente absorbidos como yo. Hay quienes se manejan bien en este nuevo mundo y quienes todavía no saben lo que es un agente. Aun así, escucho muchos mensajes tranquilizadores y percibo, en algunos casos, una ligera aura de engaño o autoengaño colectivo.
 
-Hay opiniones para todos los gustos y podemos apostar por futuros diferentes, pero la realidad, al menos en mi experiencia, es la que es: **hago en una semana el trabajo de un mes, con más calidad y sin sustos en producción**. Y eso me genera varias preguntas.
+Hay opiniones para todos los gustos y podemos apostar por futuros diferentes, pero la realidad, al menos en mi experiencia, es la que es: **hago en una semana el trabajo de un mes, con más calidad y sin sustos en producción**. Y eso me genera varias dudas.
 
 ¿Cómo reevaluará la industria la estimación y facturación de los desarrollos? ¿Cómo mediremos el esfuerzo o qué cantidad de cosas será aceptable entregar en un periodo de tiempo determinado? **Poco le queda a Scrum tal y como lo conocemos**, eso seguro.
 
