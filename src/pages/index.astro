@@ -51,7 +51,7 @@ const [featured, secondPost, thirdPost] = posts;
         <div class="grid gap-6 lg:grid-cols-3">
           {/* Tarjeta destacada */}
           <article class={`group ${secondPost ? "lg:col-span-2" : "lg:col-span-3"}`}>
-            <div class="block h-full">
+            <a href={`/blog/${featured.id}`} class="block h-full">
               <div class="grid h-full overflow-hidden rounded border-2 border-border bg-card shadow-[8px_8px_0_0_var(--border)] sm:grid-cols-2">
                 {/* Portada */}
                 <div class="relative grid min-h-[260px] place-items-center overflow-hidden border-border bg-primary text-primary-foreground max-sm:border-b-2 sm:border-r-2">
@@ -91,9 +91,7 @@ const [featured, secondPost, thirdPost] = posts;
                   </div>
 
                   <h2 class="font-head text-2xl leading-tight decoration-primary decoration-2 underline-offset-4 group-hover:underline sm:text-3xl">
-                    <a href={`/blog/${featured.id}`}>
-                      {featured.data.title}
-                    </a>
+                    {featured.data.title}
                   </h2>
 
                   <p class="mt-3 line-clamp-3 font-sans text-muted-foreground">
@@ -106,16 +104,15 @@ const [featured, secondPost, thirdPost] = posts;
                   </div>
 
                   <div class="mt-auto pt-6">
-                    <a
-                      href={`/blog/${featured.id}`}
-                      class="inline-flex items-center gap-2 rounded border-2 border-border bg-primary px-5 py-2 font-head text-sm text-primary-foreground shadow-[3px_3px_0_0_var(--border)] transition-all hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none"
+                    <span
+                      class="inline-flex items-center gap-2 rounded border-2 border-border bg-primary px-5 py-2 font-head text-sm text-primary-foreground shadow-[3px_3px_0_0_var(--border)] transition-all group-hover:translate-x-0.5 group-hover:translate-y-0.5 group-hover:shadow-none"
                     >
                       Leer artículo →
-                    </a>
+                    </span>
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </article>
 
           {/* Segunda entrada: mantiene, junto a la destacada, el layout de 2 con imagen */}

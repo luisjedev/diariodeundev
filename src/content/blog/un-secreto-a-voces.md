@@ -38,7 +38,7 @@ Cuando las empresas más rezagadas sean conscientes de lo que está pasando (o, 
 
 ¿Y los sueldos? ¿Subirán? Siendo justos… ¿deberían hacerlo? Por poder, podrían, y les seguiría saliendo rentable. Pero nosotros echamos las mismas horas y tenemos Oompa Loompas virtuales —pagados por las propias empresas en la mayoría de los casos— que nos hacen gran parte del trabajo sucio. Da que pensar… Desde luego, hay demasiadas incógnitas.
 
-¿Y cuál es el secreto menos secreto de la actualidad? Que todas estas preguntas ya han sido respondidas, y no precisamente para el bien de la mayoría. Se pueden ver de forma clara en autónomos, emprendedores, startups, pequeñas agencias, empresas de producto, desarrollo de videojuegos y un largo etc. Ámbitos en los que no es tan llamativa la ausencia de nuevos puestos, no suenan despidos masivos de miles de trabajadores y donde el cambio es menos llamativo.
+¿Y cuál es el secreto menos secreto de la actualidad? Que todas estas preguntas ya han sido respondidas, y no precisamente para el bien de la mayoría. Se pueden ver de forma clara en autónomos, emprendedores, startups, pequeñas agencias, empresas de producto, desarrollo de videojuegos y un largo etc. Ámbitos en los que no es tan alarmante la ausencia de nuevos puestos, no suenan despidos masivos de miles de trabajadores y donde el cambio es menos llamativo.
 
 Aun así, creo que los proyectos empresariales grandes y complejos seguirán necesitando una buena cantidad de personal. El contexto de negocio sigue siendo primordial y, con la rotación habitual de nuestro sector, las bajas y las vacaciones, suena un poco suicida dejar a una única persona como responsable de una pieza del puzle.
 
