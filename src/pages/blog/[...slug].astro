@@ -17,22 +17,13 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { post } = Astro.props;
-const useBricolageTitles = [
-  "sera-la-ia-mala-para-nuestros-hijos",
-  "esto-sirve-para-algo",
-].includes(post.id);
 const { Content } = await render(post);
 const { title, description, cover, category, pubDate, updatedDate, author, tags } =
   post.data;
 ---
 
 <BaseLayout title={`${title} — diariodeundev`} description={description}>
-  <article
-    class:list={[
-      "mx-auto max-w-3xl px-4 py-12",
-      { "post-bricolage": useBricolageTitles },
-    ]}
-  >
+  <article class="mx-auto max-w-3xl px-4 py-12">
     <a
       href="/blog"
       onclick="history.length > 1 && (event.preventDefault(), history.back())"
