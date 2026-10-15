@@ -12,8 +12,7 @@ const posts = (await getCollection("blog", ({ data }) => !data.draft && data.vis
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
-const [featured, ...rest] = posts;
-const sidePosts = rest.slice(0, 2);
+const [featured, secondPost, thirdPost] = posts;
 ---
 
 <BaseLayout title="diariodeundev — opinión, experiencias y tecnología">
@@ -51,7 +50,7 @@ const sidePosts = rest.slice(0, 2);
       featured && (
         <div class="grid gap-6 lg:grid-cols-3">
           {/* Tarjeta destacada */}
-          <article class="group lg:col-span-2">
+          <article class={`group ${secondPost ? "lg:col-span-2" : "lg:col-span-3"}`}>
             <div class="block h-full">
               <div class="grid h-full overflow-hidden rounded border-2 border-border bg-card shadow-[8px_8px_0_0_var(--border)] sm:grid-cols-2">
                 {/* Portada */}
@@ -119,45 +118,101 @@ const sidePosts = rest.slice(0, 2);
             </div>
           </article>
 
-          {/* Columna de entradas recientes */}
-          <div class="flex h-full flex-col gap-6">
-            {sidePosts.map((post) => (
-              <a href={`/blog/${post.id}`} class="group flex flex-1">
-                <article class="flex w-full flex-col rounded border-2 border-border bg-card p-5 shadow-[5px_5px_0_0_var(--border)] transition-all duration-200 group-hover:-translate-x-0.5 group-hover:-translate-y-0.5 group-hover:shadow-[7px_7px_0_0_var(--border)]">
-                  <div class="mb-3 flex flex-wrap items-center gap-3">
-                    <Badge variant="solid" size="sm">{post.data.category}</Badge>
-                    <time class="flex items-center gap-1.5 font-sans text-xs text-muted-foreground">
-                      <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>
-                      {formatDate(post.data.pubDate)}
-                    </time>
+          {/* Segunda entrada: mantiene, junto a la destacada, el layout de 2 con imagen */}
+          {secondPost && (
+            <a href={`/blog/${secondPost.id}`} class="group flex">
+              <article class="flex w-full flex-col rounded border-2 border-border bg-card p-5 shadow-[5px_5px_0_0_var(--border)] transition-all duration-200 group-hover:-translate-x-0.5 group-hover:-translate-y-0.5 group-hover:shadow-[7px_7px_0_0_var(--border)]">
+                <div class="mb-3 flex flex-wrap items-center gap-3">
+                  <Badge variant="solid" size="sm">{secondPost.data.category}</Badge>
+                  <time class="flex items-center gap-1.5 font-sans text-xs text-muted-foreground">
+                    <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>
+                    {formatDate(secondPost.data.pubDate)}
+                  </time>
+                </div>
+
+                <h3 class="font-head text-lg leading-tight decoration-primary decoration-2 underline-offset-4 group-hover:underline">
+                  {secondPost.data.title}
+                </h3>
+
+                {secondPost.data.cover ? (
+                  <div class="relative mt-4 min-h-[180px] flex-1 overflow-hidden rounded border-2 border-border">
+                    <Image
+                      src={secondPost.data.cover}
+                      alt={`Portada de ${secondPost.data.title}`}
+                      widths={[320, 480, 640]}
+                      sizes="(max-width: 1024px) 100vw, 33vw"
+                      quality={95}
+                      class="absolute inset-0 size-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
                   </div>
-
-                  <h3 class="font-head text-lg leading-tight decoration-primary decoration-2 underline-offset-4 group-hover:underline">
-                    {post.data.title}
-                  </h3>
-
-                  {sidePosts.length === 1 && post.data.cover && (
-                    <div class="relative mt-4 min-h-[180px] flex-1 overflow-hidden rounded border-2 border-border">
-                      <Image
-                        src={post.data.cover}
-                        alt={`Portada de ${post.data.title}`}
-                        widths={[320, 480, 640]}
-                        sizes="(max-width: 1024px) 100vw, 33vw"
-                        quality={95}
-                        class="absolute inset-0 size-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-                      />
-                    </div>
-                  )}
-
-                  <div class="mt-auto pt-4 flex items-center gap-2">
-                    <AuthorAvatar name={post.data.author} className="size-7 border-2" />
-                    <span class="font-head text-sm">{post.data.author}</span>
+                ) : (
+                  <div class="relative mt-4 grid min-h-[180px] flex-1 place-items-center overflow-hidden rounded border-2 border-border bg-primary text-primary-foreground">
+                    <span class="font-head text-7xl leading-none opacity-90" aria-hidden="true">D</span>
                   </div>
-                </article>
-              </a>
-            ))}
-          </div>
+                )}
+
+                <div class="mt-auto flex items-center gap-2 pt-4">
+                  <AuthorAvatar name={secondPost.data.author} className="size-7 border-2" />
+                  <span class="font-head text-sm">{secondPost.data.author}</span>
+                </div>
+              </article>
+            </a>
+          )}
         </div>
+      )
+    }
+
+    {
+      thirdPost && (
+        <article class="group mt-6">
+          <a href={`/blog/${thirdPost.id}`} class="block">
+            <div class="grid overflow-hidden rounded border-2 border-border bg-card shadow-[8px_8px_0_0_var(--border)] transition-all duration-200 group-hover:-translate-x-0.5 group-hover:-translate-y-0.5 group-hover:shadow-[10px_10px_0_0_var(--border)] md:grid-cols-5">
+              <div class="relative grid min-h-[220px] place-items-center overflow-hidden border-border bg-primary text-primary-foreground max-md:border-b-2 md:col-span-2 md:border-r-2">
+                {thirdPost.data.cover ? (
+                  <Image
+                    src={thirdPost.data.cover}
+                    alt={`Portada de ${thirdPost.data.title}`}
+                    widths={[480, 768, 1152]}
+                    sizes="(max-width: 768px) 100vw, 40vw"
+                    quality={95}
+                    class="absolute inset-0 size-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                  />
+                ) : (
+                  <span class="font-head text-[7rem] leading-none opacity-90" aria-hidden="true">D</span>
+                )}
+              </div>
+
+              <div class="flex flex-col p-6 sm:p-8 md:col-span-3">
+                <div class="mb-3 flex flex-wrap items-center gap-3">
+                  <Badge variant="solid" size="sm">{thirdPost.data.category}</Badge>
+                  <time class="flex items-center gap-1.5 font-sans text-xs text-muted-foreground">
+                    <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>
+                    {formatDate(thirdPost.data.pubDate)}
+                  </time>
+                </div>
+
+                <h3 class="font-head text-2xl leading-tight decoration-primary decoration-2 underline-offset-4 group-hover:underline sm:text-3xl">
+                  {thirdPost.data.title}
+                </h3>
+
+                <p class="mt-3 line-clamp-3 font-sans text-muted-foreground">
+                  {thirdPost.data.description}
+                </p>
+
+                <div class="mt-5 flex items-center gap-2">
+                  <AuthorAvatar name={thirdPost.data.author} className="size-8 border-2" />
+                  <span class="font-head text-sm">{thirdPost.data.author}</span>
+                </div>
+
+                <div class="mt-auto pt-6">
+                  <span class="inline-flex items-center gap-2 rounded border-2 border-border bg-primary px-5 py-2 font-head text-sm text-primary-foreground shadow-[3px_3px_0_0_var(--border)] transition-all group-hover:translate-x-0.5 group-hover:translate-y-0.5 group-hover:shadow-none">
+                    Leer artículo →
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
       )
     }
 
