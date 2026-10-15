@@ -14,15 +14,15 @@ Durante mi camino por este maravilloso mundo, he pasado por varias fases. Me ena
 
 Este último punto es importante, porque mi línea roja, hasta ahora, había sido limitar el uso de la IA en el trabajo o, por lo menos, fiarme de ella lo justo y necesario. La desconfianza tenía su razón de ser: mis aportaciones actuales afectan a un sistema crítico de logística a nivel mundial, en el que un solo error puede costar mucho.
 
-Ahora, aunque la planificación previa se mantiene —y se mantendrá, porque es lo realmente importante—, la IA escribe prácticamente todo el código por mí. Además, me aporta una visión más amplia, detecta problemas colaterales y me permite trabajar a velocidades impensables. Aunque esto requiere una metodología específica y horas y horas hasta dejar los flujos de trabajo bien pulidos, está claro que hemos llegado a un punto de inflexión.
+Ahora, aunque la planificación previa se mantiene —y se mantendrá, porque es lo realmente importante—, la IA escribe prácticamente todo el código por mí. Además, me aporta una visión más amplia, detecta problemas colaterales y me permite trabajar a velocidades impensables. Aunque esto requiere una metodología específica y horas y horas hasta dejar los flujos de trabajo bien pulidos, está claro que **hemos llegado a un punto de inflexión**.
 
 Sin embargo, cuando salgo de mi burbuja, noto que la realidad que vive mucha gente ahí fuera es diferente, y me choca un poco, seguramente porque tendemos a pensar que el resto del mundo ve las cosas como uno mismo.
 
 En mi día a día, estoy en contacto con personas de todo tipo: algunas más inquietas, otras más acomodadas y amigos completamente absorbidos como yo. Hay quienes se manejan bien en este nuevo mundo y quienes todavía no saben lo que es un agente. Aun así, escucho muchos mensajes tranquilizadores y percibo, en algunos casos, una ligera aura de engaño o autoengaño colectivo.
 
-Hay opiniones para todos los gustos y podemos apostar por futuros diferentes, pero la realidad, al menos en mi experiencia, es la que es: hago en una semana el trabajo de un mes, con más calidad y sin sustos en producción. Y eso me genera varias preguntas.
+Hay opiniones para todos los gustos y podemos apostar por futuros diferentes, pero la realidad, al menos en mi experiencia, es la que es: **hago en una semana el trabajo de un mes, con más calidad y sin sustos en producción**. Y eso me genera varias preguntas.
 
-¿Cómo reevaluará la industria la estimación y facturación de los desarrollos? ¿Cómo mediremos el esfuerzo o qué cantidad de cosas será aceptable entregar en un periodo de tiempo determinado? Poco le queda a Scrum tal y como lo conocemos, eso seguro.
+¿Cómo reevaluará la industria la estimación y facturación de los desarrollos? ¿Cómo mediremos el esfuerzo o qué cantidad de cosas será aceptable entregar en un periodo de tiempo determinado? **Poco le queda a Scrum tal y como lo conocemos**, eso seguro.
 
 ¿Cuánto tardarán las empresas en decidir si prefieren «producir» más o entregar al mismo ritmo reduciendo drásticamente los costes?
 
@@ -34,17 +34,17 @@ Que esa mitad dependa de la iniciativa de cada uno todavía tiene un pase; de he
 
 Somos muchos a los que nos divierte nuestro trabajo y vemos casi como un reto explorar y mejorar los productos en los que trabajamos. Pero me gustaría saber cuántos devs se tiran casi toda la jornada jugando a World of Warcraft mientras sacan los objetivos marcados trabajando un par de horas al día. Yo también podría hacerlo, pero, como quizás lean esto algunos compañeros, diré que no 😄. Y ojo, no es una crítica: lo nuestro es un trabajo como otro cualquiera, y todo el mundo tiene derecho a cumplir con lo que le toca, cerrar cuando corresponda y vivir su vida. Lo que pasa es que nuestro mundo está cambiando, y lo hará cada vez más rápido, estemos preparados o no.
 
-Cuando las empresas más rezagadas sean conscientes de lo que está pasando (o, seguramente, ya lo son y solo esperan a tener una base suficiente de «neoprogramadores»), ¿cuánto tardarán en quitarnos ese tiempo sobrante que ahora dedicamos a introducir mejoras, reducir la deuda técnica y priorizar la calidad? ¿Reducirán drásticamente el tamaño de los equipos? ¿Dejarán a una sola persona haciendo el trabajo de tres?
+Cuando las empresas más rezagadas sean conscientes de lo que está pasando (o, seguramente, ya lo son y solo esperan a tener una base suficiente de «neoprogramadores»), ¿cuánto tardarán en quitarnos ese tiempo sobrante que ahora dedicamos a introducir mejoras, reducir la deuda técnica y priorizar la calidad? ¿Reducirán drásticamente el tamaño de los equipos?
 
 ¿Y los sueldos? ¿Subirán? Siendo justos… ¿deberían hacerlo? Por poder, podrían, y les seguiría saliendo rentable. Pero nosotros echamos las mismas horas y tenemos Oompa Loompas virtuales —pagados por las propias empresas en la mayoría de los casos— que nos hacen gran parte del trabajo sucio. Da que pensar… Desde luego, hay demasiadas incógnitas.
 
-¿Y cuál es el secreto menos secreto de la actualidad? Que todas estas preguntas ya han sido respondidas, y no precisamente para el bien de la mayoría. Se pueden ver de forma clara en autónomos, emprendedores, startups, pequeñas agencias, empresas de producto, desarrollo de videojuegos y un largo etc. Ámbitos en los que no es tan alarmante la ausencia de nuevos puestos, no suenan despidos masivos de miles de trabajadores y donde el cambio es menos llamativo.
+¿Y cuál es el secreto menos secreto de la actualidad? Que **todas estas preguntas ya han sido respondidas, y no precisamente para el bien de la mayoría**. Se pueden ver de forma clara en autónomos, emprendedores, startups, pequeñas agencias, empresas de producto, desarrollo de videojuegos y un largo etc. Ámbitos en los que no es tan alarmante la ausencia de nuevos puestos, no suenan despidos masivos de miles de trabajadores y donde el cambio es menos llamativo.
 
-Aun así, creo que los proyectos empresariales grandes y complejos seguirán necesitando una buena cantidad de personal. El contexto de negocio sigue siendo primordial y, con la rotación habitual de nuestro sector, las bajas y las vacaciones, suena un poco suicida dejar a una única persona como responsable de una pieza del puzle.
+Aun así, creo que los proyectos empresariales grandes y complejos seguirán necesitando una buena cantidad de personal. **El contexto de negocio sigue siendo primordial** y, con la rotación habitual de nuestro sector, las bajas y las vacaciones, suena un poco suicida dejar a una única persona como responsable de una pieza del puzle.
 
 Si a esto le sumamos la cantidad de sistemas atrapados en contratos públicos, la externalización del desarrollo y la necesidad de tener a alguien a quien echarle la culpa cuando algo se rompe, podemos suponer que las grandes consultoras nos ofrecerán un techo acogedor durante algo más de tiempo.
 
-El día que estas dejen de ser ese refugio, lo primero que veremos será una oleada de ofertas de empresas que, en lugar de externalizar, querrán montar sus propios equipos de desarrollo, pequeños pero muy capaces. Porque, no nos engañemos, apuesto a que la automatización completa del código no llegará pronto, y mientras tanto seguirá haciendo falta alguien que entienda cada sistema y responda de él.
+El día que estas dejen de ser ese refugio, lo primero que veremos será una oleada de ofertas de empresas que, en lugar de externalizar, querrán montar sus propios equipos de desarrollo, pequeños pero muy capaces. Porque, no nos engañemos, apuesto a que **la automatización completa del código no llegará pronto**, y mientras tanto seguirá haciendo falta alguien que entienda cada sistema y responda de él.
 
 Por ahora, toca disfrutar de esta época tan divertida que nos ha tocado vivir. Podemos crear casi cualquier cosa, solucionar problemas de nuestra vida diaria, mejorar nuestro desempeño en el trabajo, emprender o, simplemente, seguir formándonos con ese tiempo extra que nos regala la inteligencia artificial.
 
