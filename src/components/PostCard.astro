@@ -51,12 +51,14 @@ const {
     </div>
 
     <div class="flex items-center gap-2 border-t-2 border-border p-5 pt-4">
-      <AuthorAvatar name={author} className="size-8 border-2" />
-      <span class="font-head text-sm">{author}</span>
       <span
-        class="ml-auto font-head text-sm text-primary-hover opacity-0 transition-opacity group-hover:opacity-100"
+        class="font-head text-sm text-primary-hover opacity-0 transition-opacity group-hover:opacity-100"
         aria-hidden="true">Leer →</span
       >
+      <div class="ml-auto flex items-center gap-2">
+        <AuthorAvatar name={author} className="size-8 border-2" />
+        <span class="font-head text-sm">{author}</span>
+      </div>
     </div>
   </Card>
 </a>

@@ -98,17 +98,16 @@ const [featured, secondPost, thirdPost] = posts;
                     {featured.data.description}
                   </p>
 
-                  <div class="mt-5 flex items-center gap-2">
-                    <AuthorAvatar name={featured.data.author} className="size-8 border-2" />
-                    <span class="font-head text-sm">{featured.data.author}</span>
-                  </div>
-
-                  <div class="mt-auto pt-6">
+                  <div class="mt-auto flex flex-wrap items-center justify-between gap-4 pt-6">
                     <span
                       class="inline-flex items-center gap-2 rounded border-2 border-border bg-primary px-5 py-2 font-head text-sm text-primary-foreground shadow-[3px_3px_0_0_var(--border)] transition-all group-hover:translate-x-0.5 group-hover:translate-y-0.5 group-hover:shadow-none"
                     >
                       Leer artículo →
                     </span>
+                    <div class="ml-auto flex items-center gap-2">
+                      <AuthorAvatar name={featured.data.author} className="size-8 border-2" />
+                      <span class="font-head text-sm">{featured.data.author}</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -148,7 +147,7 @@ const [featured, secondPost, thirdPost] = posts;
                   </div>
                 )}
 
-                <div class="mt-auto flex items-center gap-2 pt-4">
+                <div class="mt-auto flex items-center justify-end gap-2 pt-4">
                   <AuthorAvatar name={secondPost.data.author} className="size-7 border-2" />
                   <span class="font-head text-sm">{secondPost.data.author}</span>
                 </div>
@@ -196,15 +195,14 @@ const [featured, secondPost, thirdPost] = posts;
                   {thirdPost.data.description}
                 </p>
 
-                <div class="mt-5 flex items-center gap-2">
-                  <AuthorAvatar name={thirdPost.data.author} className="size-8 border-2" />
-                  <span class="font-head text-sm">{thirdPost.data.author}</span>
-                </div>
-
-                <div class="mt-auto pt-6">
+                <div class="mt-auto flex flex-wrap items-center justify-between gap-4 pt-6">
                   <span class="inline-flex items-center gap-2 rounded border-2 border-border bg-primary px-5 py-2 font-head text-sm text-primary-foreground shadow-[3px_3px_0_0_var(--border)] transition-all group-hover:translate-x-0.5 group-hover:translate-y-0.5 group-hover:shadow-none">
                     Leer artículo →
                   </span>
+                  <div class="ml-auto flex items-center gap-2">
+                    <AuthorAvatar name={thirdPost.data.author} className="size-8 border-2" />
+                    <span class="font-head text-sm">{thirdPost.data.author}</span>
+                  </div>
                 </div>
               </div>
             </div>
