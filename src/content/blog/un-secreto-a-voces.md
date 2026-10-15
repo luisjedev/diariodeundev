@@ -1,6 +1,6 @@
 ---
 title: "Un secreto a voces"
-description: "Hago en una semana el trabajo de un mes, con más calidad y sin sustos en producción. Y eso plantea más preguntas sobre el futuro de los desarrolladores de las que el sector parece querer responder."
+description: "¿Hasta cuándo mantendremos la compostura? Alguien acabará haciendo cuentas."
 cover: "../assets/portada-secreto.jpg"
 pubDate: 2026-10-15
 category: "Opinión"
